@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Mohammed Afnan K.A. | Aspiring DevOps Engineer &amp; CS Graduate</title>
+  <meta name="description" content="Personal DevOps portfolio of Mohammed Afnan K.A., Computer Science Graduate and Aspiring DevOps Engineer specializing in Linux, Git, AWS, Nginx, and cloud automation.">
+  <meta name="keywords" content="DevOps, Mohammed Afnan, Linux, AWS, Git, Nginx, Bash, Docker, Cloud Engineer, System Administrator, Portfolio">
+  <meta name="author" content="Mohammed Afnan K.A.">
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mohammed Afnan K.A. | Aspiring DevOps Engineer">
+  <meta property="og:description" content="Automating workflows. Building reliable systems. Learning continuously.">
+  
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Subtle ambient grid overlay -->
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- =========================================================================
+       HEADER / NAVIGATION
+       ========================================================================= -->
+  <header class="site-header" id="site-header">
+    <div class="container navbar">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="Mohammed Afnan Homepage">
+        <div class="brand-icon" aria-hidden="true">&gt;_</div>
+        <div class="brand-text">Afnan<span>.devops</span></div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#journey" class="nav-link">Journey</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header Action & Mobile Toggle -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn-header-cta">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          Get in Touch
+        </a>
+        
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       MAIN CONTENT
+       ========================================================================= -->
+  <main id="main-content">
+
+    <!-- -----------------------------------------------------------------------
+         HERO SECTION
+         ----------------------------------------------------------------------- -->
+    <section class="section hero-section" id="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        
+        <!-- Left Column: Bio & CTAs -->
+        <div class="hero-content reveal-item">
+          
+          <div class="badge-status">
+            <span class="status-pulse" aria-hidden="true"></span>
+            <span>Open to Entry-Level Opportunities</span>
+          </div>
+
+          <div class="hero-greeting">&lt;hello_world&gt;</div>
+          
+          <h1 class="hero-title" id="hero-title">
+            Hi, I'm <span class="gradient-text">Mohammed Afnan</span>.
+          </h1>
+
+          <div class="hero-role">Aspiring DevOps Engineer</div>
+
+          <p class="hero-tagline">
+            "Automating workflows. Building reliable systems. Learning continuously."
+          </p>
+
+          <p class="hero-desc">
+            I'm a Computer Science graduate currently developing practical skills in Linux, Git, AWS, automation, and cloud infrastructure. I enjoy solving technical problems and building hands-on projects while learning how to deploy and maintain reliable systems.
+          </p>
+
+          <div class="hero-meta">
+            <div class="hero-meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Kerala, India</span>
+            </div>
+            <div class="hero-meta-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Entry-Level | Cloud | SysAdmin</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" id="btn-explore-projects">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
+              Explore My Projects
+            </a>
+            <a href="#contact" class="btn btn-secondary" id="btn-hero-contact">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              Contact Me
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Visual Terminal Card -->
+        <div class="hero-visual reveal-item delay-1">
+          <div class="terminal-window" aria-label="Interactive Terminal Preview">
+            <div class="terminal-header">
+              <div class="terminal-controls" aria-hidden="true">
+                <span class="term-dot term-close"></span>
+                <span class="term-dot term-min"></span>
+                <span class="term-dot term-max"></span>
+              </div>
+              <div class="terminal-title">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 17 10 11 4 5"/><line x1="12" x2="20" y1="19" y2="19"/></svg>
+                afnan@devops-workstation:~
+              </div>
+              <button class="terminal-action-btn" id="btn-replay-terminal" title="Replay terminal typing" aria-label="Replay terminal animation">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+                <span>Replay</span>
+              </button>
+            </div>
+            
+            <div class="terminal-body" id="terminal-content">
+              <!-- Animated typing stream inserted dynamically by js/script.js -->
+              <noscript>
+                <div class="terminal-entry">
+                  <div class="term-prompt"><span>$</span> <span class="term-cmd">whoami</span></div>
+                  <div class="term-output highlight">Mohammed Afnan</div>
+                </div>
+                <div class="terminal-entry">
+                  <div class="term-prompt"><span>$</span> <span class="term-cmd">pwd</span></div>
+                  <div class="term-output">/home/afnan/devops-journey</div>
+                </div>
+                <div class="terminal-entry">
+                  <div class="term-prompt"><span>$</span> <span class="term-cmd">git status</span></div>
+                  <div class="term-output success">Learning. Building. Improving.</div>
+                </div>
+              </noscript>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         ABOUT ME SECTION
+         ----------------------------------------------------------------------- -->
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        
+        <div class="section-header reveal-item">
+          <span class="section-tag">// Profile Overview</span>
+          <h2 class="section-title" id="about-title">About Me</h2>
+          <p class="section-subtitle">
+            Solid computer science fundamentals paired with focused, hands-on DevOps and cloud infrastructure practices.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Detailed Bio Card -->
+          <div class="about-intro-card reveal-item">
+            <h3 class="about-intro-lead">Building reliable infrastructure from the ground up.</h3>
+            <p class="about-intro-text">
+              I hold a B.Tech in Computer Science and Engineering and have developed a strong passion for DevOps engineering and cloud operations. My academic background provided me with a rigorous foundation in operating systems, networking fundamentals, distributed systems, and computer architectures.
+            </p>
+            <p class="about-intro-text">
+              Rather than relying solely on theoretical knowledge, I actively practice in virtual machines and cloud lab environments—writing Bash scripts to automate Linux system tasks, configuring Nginx web servers from scratch, practicing branch management on Git/GitHub, and deploying infrastructure resources using AWS services.
+            </p>
+          </div>
+
+          <!-- 4 Information Cards -->
+          <div class="about-cards-grid">
+            
+            <!-- Card 1: Background -->
+            <div class="info-card reveal-item delay-1">
+              <div class="info-card-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
+              </div>
+              <span class="info-card-label">Core Education</span>
+              <h4 class="info-card-title">Computer Science Engineering</h4>
+              <p class="info-card-desc">
+                Strong technical base in operating system design, Unix principles, TCP/IP networks, and algorithmic problem-solving.
+              </p>
+            </div>
+
+            <!-- Card 2: Current Focus -->
+            <div class="info-card reveal-item delay-2">
+              <div class="info-card-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+              </div>
+              <span class="info-card-label">Specialization</span>
+              <h4 class="info-card-title">DevOps and Cloud Computing</h4>
+              <p class="info-card-desc">
+                Focusing on Linux server administration, AWS cloud services, infrastructure automation, and container orchestration concepts.
+              </p>
+            </div>
+
+            <!-- Card 3: Learning Style -->
+            <div class="info-card reveal-item delay-3">
+              <div class="info-card-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="m9 8 6 4-6 4Z"/></svg>
+              </div>
+              <span class="info-card-label">Methodology</span>
+              <h4 class="info-card-title">Hands-on Projects</h4>
+              <p class="info-card-desc">
+                Learning through doing: spinning up local VMs, breaking and fixing service configurations, inspecting logs, and automating repetitive tasks.
+              </p>
+            </div>
+
+            <!-- Card 4: Career Goal -->
+            <div class="info-card reveal-item delay-4">
+              <div class="info-card-icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="12 6 15.5 10 19 14 12 18 5 14 8.5 10 12 6"/></svg>
+              </div>
+              <span class="info-card-label">Objective</span>
+              <h4 class="info-card-title">Entry-Level DevOps Opportunities</h4>
+              <p class="info-card-desc">
+                Targeting Entry-level DevOps Engineer, Cloud Engineer, or Linux System Administrator positions where I can contribute and expand my skills.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         SKILLS SECTION
+         ----------------------------------------------------------------------- -->
+    <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        
+        <div class="section-header reveal-item">
+          <span class="section-tag">// Technical Toolkit</span>
+          <h2 class="section-title" id="skills-title">Technical Skills</h2>
+          <p class="section-subtitle">
+            Practical proficiencies categorized by discipline, labeled transparently to reflect active learning stages.
+          </p>
+        </div>
+
+        <!-- Filter navigation for skills -->
+        <div class="skills-filter-nav reveal-item">
+          <button class="skill-tab-btn active" data-skill-filter="all">All Disciplines</button>
+          <button class="skill-tab-btn" data-skill-filter="linux">Linux &amp; Systems</button>
+          <button class="skill-tab-btn" data-skill-filter="git">Version Control</button>
+          <button class="skill-tab-btn" data-skill-filter="cloud">Cloud (AWS)</button>
+          <button class="skill-tab-btn" data-skill-filter="networking">Networking &amp; Web</button>
+          <button class="skill-tab-btn" data-skill-filter="automation">Automation</button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid">
+          
+          <!-- Category 1: Linux & SysAdmin -->
+          <div class="skill-category-card reveal-item" data-category="linux">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+              </div>
+              <h3 class="skill-cat-title">Linux and System Administration</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-badge"><span>Linux</span> <span class="skill-level-tag practicing">Practicing</span></div>
+              <div class="skill-badge"><span>Ubuntu</span> <span class="skill-level-tag practicing">Practicing</span></div>
+              <div class="skill-badge"><span>Bash scripting</span> <span class="skill-level-tag practicing">Practicing</span></div>
+              <div class="skill-badge"><span>File permissions</span> <span class="skill-level-tag practicing">Practicing</span></div>
+              <div class="skill-badge"><span>Process management</span> <span class="skill-level-tag practicing">Practicing</span></div>
+              <div class="skill-badge"><span>Service management</span> <span class="skill-level-tag practicing">Practicing</span></div>
+              <div class="skill-badge"><span>System monitoring</span> <span class="skill-level-tag learning">Learning</span></div>
+              <div class="skill-badge"><span>Log analysis</span> <span class="skill-level-tag learning">Learning</span></div>
+            </div>
+          </div>
+
+          <!-- Category 2: Version Control -->
+          <div class="skill-category-card reveal-item delay-1" data-category="git">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" x2="6" y1="3" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>
+              </div>
+              <h3 class="skill-cat-title">Version Control</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-badge"><span>Git</span> <span class="skill-level-tag practicing">Practicing</span></div>
+              <div class="skill-badge"><span>GitHub</span> <span class="skill-level-tag practicing">Practicing</span></div>
+              <div class="skill-badge"><span>Branching and merging</span> <span class="skill-level-tag practicing">Practicing</span></div>
+            </div>
+          </div>
+
+          <!-- Category 3: Cloud -->
+          <div class="skill-category-card reveal-item delay-2" data-category="cloud">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+              </div>
+              <h3 class="skill-cat-title">Cloud Infrastructure</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-badge"><span>AWS fundamentals</span> <span class="skill-level-tag learning">Learning</span></div>
+              <div class="skill-badge"><span>Amazon EC2</span> <span class="skill-level-tag learning">Learning</span></div>
+              <div class="skill-badge"><span>Amazon S3</span> <span class="skill-level-tag learning">Learning</span></div>
+              <div class="skill-badge"><span>AWS IAM</span> <span class="skill-level-tag learning">Learning</span></div>
+              <div class="skill-badge"><span>CloudFormation fundamentals</span> <span class="skill-level-tag learning">Learning</span></div>
+            </div>
+          </div>
+
+          <!-- Category 4: Web and Networking -->
+          <div class="skill-category-card reveal-item delay-1" data-category="networking">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <h3 class="skill-cat-title">Web and Networking</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-badge"><span>Nginx</span> <span class="skill-level-tag practicing">Practicing</span></div>
+              <div class="skill-badge"><span>HTTP/HTTPS</span> <span class="skill-level-tag familiar">Familiar</span></div>
+              <div class="skill-badge"><span>DNS fundamentals</span> <span class="skill-level-tag familiar">Familiar</span></div>
+              <div class="skill-badge"><span>Networking fundamentals</span> <span class="skill-level-tag familiar">Familiar</span></div>
+            </div>
+          </div>
+
+          <!-- Category 5: Automation -->
+          <div class="skill-category-card reveal-item delay-2" data-category="automation">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="m4.93 4.93 2.83 2.83"/><path d="M2 12h4"/><path d="m4.93 19.07 2.83-2.83"/><path d="M12 18v4"/><path d="m19.07 19.07-2.83-2.83"/><path d="M18 12h4"/><path d="m19.07 4.93-2.83 2.83"/></svg>
+              </div>
+              <h3 class="skill-cat-title">Automation &amp; CI/CD</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-badge"><span>Python fundamentals</span> <span class="skill-level-tag familiar">Familiar</span></div>
+              <div class="skill-badge"><span>Docker fundamentals</span> <span class="skill-level-tag learning">Learning</span></div>
+              <div class="skill-badge"><span>CI/CD fundamentals</span> <span class="skill-level-tag learning">Learning</span></div>
+              <div class="skill-badge"><span>GitHub Actions fundamentals</span> <span class="skill-level-tag learning">Learning</span></div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="skills-note reveal-item">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="16" y2="12"/><line x1="12" x2="12.01" y1="8" y2="8"/></svg>
+          <span>Skill levels are strictly self-assessed based on real laboratory exercises and current curriculum progress.</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         PROJECTS SECTION
+         ----------------------------------------------------------------------- -->
+    <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        
+        <div class="section-header reveal-item">
+          <span class="section-tag">// Hands-On Labs</span>
+          <h2 class="section-title" id="projects-title">Practical Projects</h2>
+          <p class="section-subtitle">
+            Hands-on implementation projects focused on Linux administration, web server deployments, source control, and cloud infrastructure.
+          </p>
+        </div>
+
+        <!-- Project Filtering Buttons -->
+        <div class="projects-filter-nav reveal-item">
+          <button class="project-filter-btn active" data-filter="all">All Projects</button>
+          <button class="project-filter-btn" data-filter="linux">Linux &amp; Bash</button>
+          <button class="project-filter-btn" data-filter="web">Web &amp; Nginx</button>
+          <button class="project-filter-btn" data-filter="git">Git Workflow</button>
+          <button class="project-filter-btn" data-filter="cloud">AWS Cloud</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+          
+          <!-- Project 1: Linux System Monitoring Tool -->
+          <article class="project-card reveal-item" data-category="linux">
+            <div>
+              <div class="project-card-header">
+                <h3 class="project-title">Linux System Monitoring Tool</h3>
+                <span class="project-status-badge in-progress">In Progress</span>
+              </div>
+              
+              <p class="project-desc">
+                A Linux monitoring project focused on checking CPU usage, memory utilization, disk space, running processes, and basic system health using Linux commands and Bash scripts.
+              </p>
+
+              <div class="project-details-box">
+                <div class="project-details-title">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                  Current Implementation &amp; Roadmap
+                </div>
+                <ul class="project-details-list">
+                  <li>Automates checks using <code>top</code>, <code>free -m</code>, <code>df -h</code>, and <code>ps aux</code>.</li>
+                  <li>Generates time-stamped log files for threshold violations.</li>
+                  <li><strong>Future Improvement:</strong> Adding automated email notifications and lightweight HTML health dashboard generation.</li>
+                </ul>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">Ubuntu</span>
+                <span class="tech-tag">Linux</span>
+                <span class="tech-tag">Bash</span>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <a href="https://github.com/yourusername/linux-system-monitor" class="project-link-btn placeholder-link" data-info="GitHub Repository for Linux System Monitoring Tool" target="_blank" rel="noopener noreferrer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                View Repository
+              </a>
+              <span class="placeholder-indicator">[Placeholder Repo Link]</span>
+            </div>
+          </article>
+
+          <!-- Project 2: Nginx Web Server Deployment -->
+          <article class="project-card reveal-item delay-1" data-category="web linux">
+            <div>
+              <div class="project-card-header">
+                <h3 class="project-title">Nginx Web Server Deployment</h3>
+                <span class="project-status-badge in-progress">In Progress</span>
+              </div>
+              
+              <p class="project-desc">
+                A practical project involving Nginx installation, service management, hosting a static webpage, inspecting access and error logs, and troubleshooting web server issues.
+              </p>
+
+              <div class="project-details-box">
+                <div class="project-details-title">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                  Current Implementation &amp; Roadmap
+                </div>
+                <ul class="project-details-list">
+                  <li>Configuring custom server blocks (virtual hosts) in <code>/etc/nginx/sites-available</code>.</li>
+                  <li>Investigating HTTP response codes and analyzing access &amp; error log streams.</li>
+                  <li><strong>Future Improvement:</strong> Implementing Let's Encrypt SSL/TLS certificates and configuring a reverse proxy for backend applications.</li>
+                </ul>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">Ubuntu</span>
+                <span class="tech-tag">Nginx</span>
+                <span class="tech-tag">Linux</span>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <a href="https://github.com/yourusername/nginx-server-deployment" class="project-link-btn placeholder-link" data-info="GitHub Repository for Nginx Web Server Deployment" target="_blank" rel="noopener noreferrer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                View Repository
+              </a>
+              <span class="placeholder-indicator">[Placeholder Repo Link]</span>
+            </div>
+          </article>
+
+          <!-- Project 3: Git and GitHub Workflow -->
+          <article class="project-card reveal-item" data-category="git">
+            <div>
+              <div class="project-card-header">
+                <h3 class="project-title">Git and GitHub Workflow</h3>
+                <span class="project-status-badge practicing">Practicing</span>
+              </div>
+              
+              <p class="project-desc">
+                A project demonstrating repository initialization, commits, branches, merging, and source code management.
+              </p>
+
+              <div class="project-details-box">
+                <div class="project-details-title">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                  Current Implementation &amp; Roadmap
+                </div>
+                <ul class="project-details-list">
+                  <li>Structured feature-branch workflows, rebasing, and merge conflict resolution.</li>
+                  <li>Writing conventional commit messages and repository documentation.</li>
+                  <li><strong>Future Improvement:</strong> Creating automated pre-commit linting hooks and integrating GitHub Actions for CI.</li>
+                </ul>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">Git</span>
+                <span class="tech-tag">GitHub</span>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <a href="https://github.com/yourusername/git-workflow-lab" class="project-link-btn placeholder-link" data-info="GitHub Repository for Git and GitHub Workflow" target="_blank" rel="noopener noreferrer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                View Repository
+              </a>
+              <span class="placeholder-indicator">[Placeholder Repo Link]</span>
+            </div>
+          </article>
+
+          <!-- Project 4: AWS Cloud Fundamentals -->
+          <article class="project-card reveal-item delay-1" data-category="cloud">
+            <div>
+              <div class="project-card-header">
+                <h3 class="project-title">AWS Cloud Fundamentals</h3>
+                <span class="project-status-badge planned">Planned</span>
+              </div>
+              
+              <p class="project-desc">
+                A learning project exploring foundational AWS services and cloud infrastructure concepts.
+              </p>
+
+              <div class="project-details-box">
+                <div class="project-details-title">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                  Current Implementation &amp; Roadmap
+                </div>
+                <ul class="project-details-list">
+                  <li>Deploying virtual servers on Amazon EC2 and defining inbound Security Groups.</li>
+                  <li>Managing S3 buckets, object versioning, and IAM role security policies.</li>
+                  <li><strong>Future Improvement:</strong> Provisioning a multi-tier VPC network using AWS CloudFormation templates.</li>
+                </ul>
+              </div>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">AWS</span>
+                <span class="tech-tag">EC2</span>
+                <span class="tech-tag">S3</span>
+                <span class="tech-tag">IAM</span>
+                <span class="tech-tag">CloudFormation</span>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <a href="https://github.com/yourusername/aws-cloud-fundamentals" class="project-link-btn placeholder-link" data-info="GitHub Repository for AWS Cloud Fundamentals" target="_blank" rel="noopener noreferrer">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                View Repository
+              </a>
+              <span class="placeholder-indicator">[Placeholder Repo Link]</span>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         LEARNING JOURNEY (ROADMAP) SECTION
+         ----------------------------------------------------------------------- -->
+    <section class="section journey-section" id="journey" aria-labelledby="journey-title">
+      <div class="container journey-container">
+        
+        <div class="section-header reveal-item">
+          <span class="section-tag">// Step-By-Step Progression</span>
+          <h2 class="section-title" id="journey-title">DevOps Learning Journey</h2>
+          <p class="section-subtitle">
+            A structured path through systems, networking, cloud, and automation milestones. Configurable directly in JavaScript.
+          </p>
+        </div>
+
+        <!-- Dynamic Roadmap Timeline generated by js/script.js -->
+        <div class="roadmap-timeline" id="journey-timeline">
+          <!-- Fallback items for no-JS environments -->
+          <noscript>
+            <div class="roadmap-item completed">
+              <div class="roadmap-marker"><span>01</span></div>
+              <div class="roadmap-card">
+                <div class="roadmap-card-header">
+                  <h3 class="roadmap-stage-title">Linux Fundamentals</h3>
+                  <span class="roadmap-status-pill completed">Practicing</span>
+                </div>
+                <p class="roadmap-desc">Command line basics, permissions, package managers, and bash scripting.</p>
+              </div>
+            </div>
+          </noscript>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         EDUCATION SECTION
+         ----------------------------------------------------------------------- -->
+    <section class="section education-section" id="education" aria-labelledby="education-title">
+      <div class="container education-container">
+        
+        <div class="section-header reveal-item">
+          <span class="section-tag">// Academic Background</span>
+          <h2 class="section-title" id="education-title">Education</h2>
+          <p class="section-subtitle">
+            Foundational computer science degree powering my systems-level DevOps learning.
+          </p>
+        </div>
+
+        <div class="education-card reveal-item">
+          <div class="education-icon-wrapper" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          
+          <div class="education-content">
+            <h3 class="education-degree">B.Tech in Computer Science and Engineering</h3>
+            
+            <div class="education-meta">
+              <span class="edu-institution">Institution: <span class="placeholder-pill">[Your College Name]</span></span>
+              <span>•</span>
+              <span class="edu-year">Graduation Year: <span class="placeholder-pill">[Your Graduation Year]</span></span>
+            </div>
+
+            <p class="education-summary">
+              Graduated with rigorous coursework covering Operating Systems, Computer Networks, Database Management Systems, Data Structures &amp; Algorithms, and Object-Oriented Software Engineering. These concepts translate directly into understanding infrastructure design, network protocols, and Linux system architectures.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         CONTACT SECTION
+         ----------------------------------------------------------------------- -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-container">
+        
+        <div class="section-header reveal-item">
+          <span class="section-tag">// Get In Touch</span>
+          <h2 class="section-title" id="contact-title">Connect With Me</h2>
+          <p class="section-subtitle">
+            Actively seeking entry-level DevOps, Cloud Engineering, and Linux System Administrator opportunities.
+          </p>
+        </div>
+
+        <div class="contact-layout reveal-item">
+          
+          <!-- Contact Left: Bio & Opportunities -->
+          <div class="contact-card">
+            <div>
+              <h3 class="contact-card-title">Let's Discuss Opportunities</h3>
+              <p class="contact-card-text">
+                Whether you have an entry-level position open, a mentorship opportunity, or would like to discuss practical DevOps projects and system administration labs, I'd love to hear from you.
+              </p>
+
+              <div class="contact-status-box">
+                <span class="status-pulse" aria-hidden="true"></span>
+                <p class="contact-status-text">
+                  <strong>Available for Hiring:</strong> Open to full-time entry-level DevOps, Cloud, and Junior System Administration positions (Remote or On-site in India).
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-resume-card">
+              <div class="resume-info">
+                <div class="resume-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+                </div>
+                <div>
+                  <div class="resume-name">Curriculum Vitae / Resume</div>
+                  <div class="resume-note">PDF Format • Place file in assets/resume.pdf</div>
+                </div>
+              </div>
+              
+              <a href="assets/resume.pdf" class="contact-action-btn placeholder-link" data-info="Resume PDF file (assets/resume.pdf)" download>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                Download
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Right: Direct Channels (No Fake Forms) -->
+          <div class="contact-card">
+            <h3 class="contact-card-title">Direct Channels</h3>
+            <p class="contact-card-text">
+              Direct, transparent contact methods. Click to email or copy contact handles:
+            </p>
+
+            <div class="contact-methods">
+              
+              <!-- Email -->
+              <div class="contact-method-item">
+                <div class="contact-method-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </div>
+                <div class="contact-method-info">
+                  <div class="contact-method-label">Email Address</div>
+                  <div class="contact-method-value">your.email@example.com</div>
+                </div>
+                <div style="display: flex; gap: 0.4rem;">
+                  <button class="contact-action-btn" id="btn-copy-email" data-email="your.email@example.com" title="Copy email address" aria-label="Copy email address to clipboard">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                    Copy
+                  </button>
+                  <a href="mailto:your.email@example.com" class="contact-action-btn placeholder-link" data-info="Email address mailto link">
+                    Send
+                  </a>
+                </div>
+              </div>
+
+              <!-- GitHub -->
+              <div class="contact-method-item">
+                <div class="contact-method-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                </div>
+                <div class="contact-method-info">
+                  <div class="contact-method-label">GitHub Profile</div>
+                  <div class="contact-method-value">github.com/yourusername</div>
+                </div>
+                <a href="https://github.com/yourusername" class="contact-action-btn placeholder-link" data-info="GitHub profile link" target="_blank" rel="noopener noreferrer">
+                  Visit
+                </a>
+              </div>
+
+              <!-- LinkedIn -->
+              <div class="contact-method-item">
+                <div class="contact-method-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                </div>
+                <div class="contact-method-info">
+                  <div class="contact-method-label">LinkedIn Profile</div>
+                  <div class="contact-method-value">linkedin.com/in/yourusername</div>
+                </div>
+                <a href="https://linkedin.com/in/yourusername" class="contact-action-btn placeholder-link" data-info="LinkedIn profile link" target="_blank" rel="noopener noreferrer">
+                  Connect
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-author">Mohammed Afnan K.A.</div>
+          <div class="footer-tagline">Automating workflows. Building reliable systems. Learning continuously.</div>
+        </div>
+
+        <div class="footer-social-links">
+          <a href="https://github.com/yourusername" class="social-icon-btn placeholder-link" data-info="GitHub profile" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/yourusername" class="social-icon-btn placeholder-link" data-info="LinkedIn profile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-credit">
+          Designed and built by Mohammed Afnan K.A.
+        </p>
+        <p class="footer-copyright">
+          &copy; <span id="current-year">2026</span> All rights reserved.
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       UTILITY COMPONENTS: SCROLL TO TOP & TOAST NOTIFICATION
+       ========================================================================= -->
+  <button class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top of page">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <div class="toast-notice" id="toast-notice" role="status" aria-live="polite">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+    <span class="toast-text">Notice message</span>
+  </div>
+
+  <!-- Vanilla JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
