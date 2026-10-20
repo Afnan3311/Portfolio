@@ -4,245 +4,391 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <!-- SEO Meta Tags -->
-  <title>Mohammed Afnan K.A. | Aspiring DevOps Engineer &amp; CS Graduate</title>
-  <meta name="description" content="Personal DevOps portfolio of Mohammed Afnan K.A., Computer Science Graduate and Aspiring DevOps Engineer specializing in Linux, Git, AWS, Nginx, and cloud automation.">
-  <meta name="keywords" content="DevOps, Mohammed Afnan, Linux, AWS, Git, Nginx, Bash, Docker, Cloud Engineer, System Administrator, Portfolio">
-  <meta name="author" content="Mohammed Afnan K.A.">
-  
-  <!-- Open Graph / Social Sharing -->
+  <!-- Primary SEO Meta Tags -->
+  <title>Mohammed Afnan K A | RHCSA Certified &bull; Aspiring DevOps Engineer</title>
+  <meta name="title" content="Mohammed Afnan K A | RHCSA Certified &bull; Aspiring DevOps Engineer">
+  <meta name="description" content="Portfolio of Mohammed Afnan K A — RHCSA Certified Linux Administrator and Computer Science graduate specializing in Linux system administration, infrastructure automation, Bash scripting, and cloud technologies.">
+  <meta name="keywords" content="Mohammed Afnan, RHCSA, Red Hat Certified System Administrator, DevOps Engineer, Linux Administration, RHEL, Bash Scripting, AWS, Cloud Infrastructure, Thrissur Kerala">
+  <meta name="author" content="Mohammed Afnan K A">
+  <meta name="theme-color" content="#0B1020">
+
+  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Mohammed Afnan K.A. | Aspiring DevOps Engineer">
-  <meta property="og:description" content="Automating workflows. Building reliable systems. Learning continuously.">
-  
-  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <meta property="og:url" content="https://afnan3311.github.io/portfolio/">
+  <meta property="og:title" content="Mohammed Afnan K A | RHCSA Certified &bull; Aspiring DevOps Engineer">
+  <meta property="og:description" content="Engineering the invisible: Building reliable systems, automating infrastructure, and exploring cloud architectures.">
+  <meta property="og:image" content="assets/public/afnan-hoodie.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Mohammed Afnan K A | RHCSA Certified &bull; Aspiring DevOps Engineer">
+  <meta name="twitter:description" content="Engineering the invisible: Building reliable systems, automating infrastructure, and exploring cloud architectures.">
+  <meta name="twitter:image" content="assets/public/afnan-hoodie.png">
+
+  <!-- Preconnect to Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Core Stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Preload cinematic hero portrait asset -->
+  <link rel="preload" as="image" href="assets/public/afnan-hoodie.png">
 </head>
-<body>
+<body class="theme-midnight">
 
-  <!-- Subtle ambient grid overlay -->
-  <div class="bg-grid" aria-hidden="true"></div>
+  <!-- Technical Background Grid Overlay -->
+  <div class="technical-grid-bg" aria-hidden="true"></div>
+  <div class="ambient-glow glow-top" aria-hidden="true"></div>
+  <div class="ambient-glow glow-bottom" aria-hidden="true"></div>
 
   <!-- =========================================================================
-       HEADER / NAVIGATION
+       NAVIGATION BAR
        ========================================================================= -->
   <header class="site-header" id="site-header">
-    <div class="container navbar">
-      <!-- Brand Logo -->
-      <a href="#hero" class="brand-logo" aria-label="Mohammed Afnan Homepage">
-        <div class="brand-icon" aria-hidden="true">&gt;_</div>
-        <div class="brand-text">Afnan<span>.devops</span></div>
+    <div class="nav-container">
+      
+      <!-- Wordmark Brand -->
+      <a href="#hero-track" class="brand-link" aria-label="Mohammed Afnan Homepage">
+        <span class="brand-code">&gt;</span>
+        <span class="brand-name">AFNAN</span>
+        <span class="brand-status-dot" title="System Status: Online"></span>
+        <span class="brand-badge">RHCSA</span>
       </a>
 
       <!-- Desktop Navigation Menu -->
       <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#journey" class="nav-link">Journey</a>
-        <a href="#education" class="nav-link">Education</a>
-        <a href="#contact" class="nav-link">Contact</a>
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link" data-nav="about">About</a></li>
+          <li><a href="#skills" class="nav-link" data-nav="skills">Skills</a></li>
+          <li><a href="#projects" class="nav-link" data-nav="projects">Projects</a></li>
+          <li><a href="#certifications" class="nav-link" data-nav="certifications">Certifications</a></li>
+          <li><a href="#education" class="nav-link" data-nav="education">Education</a></li>
+          <li><a href="#contact" class="nav-link" data-nav="contact">Contact</a></li>
+        </ul>
       </nav>
 
-      <!-- Header Action & Mobile Toggle -->
+      <!-- Nav CTA Actions -->
       <div class="nav-actions">
-        <a href="#contact" class="btn-header-cta">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-          Get in Touch
+        <!-- Interactive Terminal Trigger Button -->
+        <button class="btn-terminal-toggle" id="btn-terminal-toggle" aria-label="Open Interactive DevOps Terminal" title="Press ` (backtick) or click to open shell">
+          <span class="terminal-icon-symbol">&gt;_</span>
+          <span class="terminal-text-label">Terminal</span>
+          <kbd class="terminal-kbd">`</kbd>
+        </button>
+
+        <a href="#contact" class="btn btn-connect-nav">
+          <span>Let's Connect</span>
+          <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
         </a>
-        
-        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
-          <span></span>
-          <span></span>
-          <span></span>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
         </button>
       </div>
+
     </div>
   </header>
 
   <!-- =========================================================================
-       MAIN CONTENT
+       MAIN CONTENT CONTAINER
        ========================================================================= -->
   <main id="main-content">
 
     <!-- -----------------------------------------------------------------------
-         HERO SECTION
+         CINEMATIC HERO ANIMATION SECTION (SCROLL-LINKED ENGINE)
          ----------------------------------------------------------------------- -->
-    <section class="section hero-section" id="hero" aria-labelledby="hero-title">
-      <div class="container hero-grid">
+    <div class="hero-scroll-track" id="hero-track">
+      <div class="hero-sticky-stage" id="hero-stage">
         
-        <!-- Left Column: Bio & CTAs -->
-        <div class="hero-content reveal-item">
+        <!-- Cyber Ambient Grid & Telemetry Lines -->
+        <div class="hero-cyber-lines" aria-hidden="true">
+          <div class="cyber-line cyber-line-1"></div>
+          <div class="cyber-line cyber-line-2"></div>
+          <div class="cyber-line cyber-line-3"></div>
+        </div>
+        
+        <!-- Top HUD Telemetry -->
+        <div class="hero-hud-top" id="hero-hud">
+          <div class="hud-item hud-sys">
+            <span class="hud-dot"></span>
+            <span class="hud-text">SYSTEMS / AUTOMATION / CLOUD</span>
+          </div>
+          <div class="hud-item hud-loc">
+            <span class="hud-coords">10.5276° N, 76.2144° E</span>
+            <span class="hud-sep">//</span>
+            <span class="hud-label">THRISSUR, IN</span>
+          </div>
+        </div>
+
+        <!-- Giant Background Editorial Typography (Behind Character with 3D Parallax) -->
+        <div class="hero-giant-typography" id="hero-giant-type" aria-hidden="true">
+          <div class="giant-line giant-line-1" id="giant-word-1">ENGINEERING</div>
+          <div class="giant-line giant-line-2" id="giant-word-2">THE INVISIBLE</div>
+        </div>
+
+        <!-- Central Character Stage: Single Bust-Sized Hoodie Portrait -->
+        <div class="hero-character-stage" id="hero-char-stage">
           
-          <div class="badge-status">
-            <span class="status-pulse" aria-hidden="true"></span>
-            <span>Open to Entry-Level Opportunities</span>
+          <!-- Electric-Teal Atmospheric Rim Aura Glow -->
+          <div class="char-aura-glow" id="char-glow" aria-hidden="true"></div>
+
+          <!-- Character Frame with Smooth Bottom Fade (Single Image) -->
+          <div class="char-portrait-frame" id="char-frame">
+            <img 
+              src="assets/public/afnan-hoodie.png" 
+              alt="Mohammed Afnan K A — RHCSA Certified Linux & DevOps Engineer"
+              class="char-portrait-img"
+              id="char-img"
+              loading="eager"
+            >
+            <div class="char-bottom-fade" aria-hidden="true"></div>
+            
+            <!-- Technical Reticle Corners -->
+            <div class="portrait-reticle-corners" aria-hidden="true">
+              <span class="r-corner r-tl"></span>
+              <span class="r-corner r-tr"></span>
+              <span class="r-corner r-bl"></span>
+              <span class="r-corner r-br"></span>
+            </div>
           </div>
 
-          <div class="hero-greeting">&lt;hello_world&gt;</div>
+        </div>
+
+        <!-- Foreground Editorial Content, Badges & Calls to Action -->
+        <div class="hero-foreground-content" id="hero-fg-content">
           
-          <h1 class="hero-title" id="hero-title">
-            Hi, I'm <span class="gradient-text">Mohammed Afnan</span>.
-          </h1>
-
-          <div class="hero-role">Aspiring DevOps Engineer</div>
-
-          <p class="hero-tagline">
-            "Automating workflows. Building reliable systems. Learning continuously."
-          </p>
-
-          <p class="hero-desc">
-            I'm a Computer Science graduate currently developing practical skills in Linux, Git, AWS, automation, and cloud infrastructure. I enjoy solving technical problems and building hands-on projects while learning how to deploy and maintain reliable systems.
-          </p>
-
-          <div class="hero-meta">
-            <div class="hero-meta-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-              <span>Kerala, India</span>
-            </div>
-            <div class="hero-meta-item">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              <span>Entry-Level | Cloud | SysAdmin</span>
-            </div>
+          <!-- Identity Badge -->
+          <div class="hero-identity-tag" id="fg-badge">
+            <span class="tag-terminal-prompt">&gt;</span>
+            <span class="tag-name">MOHAMMED AFNAN K A</span>
+            <span class="tag-divider">|</span>
+            <span class="tag-cert">RHCSA CERTIFIED</span>
           </div>
 
-          <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary" id="btn-explore-projects">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
-              Explore My Projects
+          <!-- Main Sub-Headline -->
+          <p class="hero-statement" id="fg-statement">
+            Building reliable systems. Automating infrastructure. Exploring the cloud.
+          </p>
+
+          <div class="hero-role-pill" id="fg-role">
+            <span class="role-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                <line x1="6" y1="18" x2="6.01" y2="18"></line>
+              </svg>
+            </span>
+            <span class="role-text">RHCSA Certified &bull; Aspiring DevOps Engineer</span>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="hero-actions-cluster" id="fg-actions">
+            <a href="#projects" class="btn btn-primary" id="cta-explore">
+              <span>Explore My Work</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+              </svg>
             </a>
-            <a href="#contact" class="btn btn-secondary" id="btn-hero-contact">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-              Contact Me
+
+            <a href="#contact" class="btn btn-secondary" id="cta-connect">
+              <span>Let's Connect</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <a href="assets/Afnan_System_Engineer.pdf" download="Afnan_System_Engineer.pdf" class="btn btn-outline" id="cta-resume" aria-label="Download Official Resume PDF">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              <span>Resume</span>
+            </a>
+          </div>
+
+          <!-- Quick Accessible Social Links -->
+          <div class="hero-socials-cluster" id="fg-socials" aria-label="Social Links">
+            <a href="https://github.com/Afnan3311" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Afnan's GitHub Profile">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                <path d="M9 18c-4.51 2-5-2-7-2"></path>
+              </svg>
+              <span class="social-text">github.com/Afnan3311</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/mohammed-afnan04/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Afnan's LinkedIn Profile">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              <span class="social-text">in/mohammed-afnan04</span>
+            </a>
+
+            <a href="mailto:mohdafnan9617@gmail.com" class="social-icon-btn" aria-label="Email Afnan directly">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+              </svg>
+              <span class="social-text">mohdafnan9617@gmail.com</span>
             </a>
           </div>
 
         </div>
 
-        <!-- Right Column: Visual Terminal Card -->
-        <div class="hero-visual reveal-item delay-1">
-          <div class="terminal-window" aria-label="Interactive Terminal Preview">
-            <div class="terminal-header">
-              <div class="terminal-controls" aria-hidden="true">
-                <span class="term-dot term-close"></span>
-                <span class="term-dot term-min"></span>
-                <span class="term-dot term-max"></span>
-              </div>
-              <div class="terminal-title">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="4 17 10 11 4 5"/><line x1="12" x2="20" y1="19" y2="19"/></svg>
-                afnan@devops-workstation:~
-              </div>
-              <button class="terminal-action-btn" id="btn-replay-terminal" title="Replay terminal typing" aria-label="Replay terminal animation">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
-                <span>Replay</span>
-              </button>
-            </div>
-            
-            <div class="terminal-body" id="terminal-content">
-              <!-- Animated typing stream inserted dynamically by js/script.js -->
-              <noscript>
-                <div class="terminal-entry">
-                  <div class="term-prompt"><span>$</span> <span class="term-cmd">whoami</span></div>
-                  <div class="term-output highlight">Mohammed Afnan</div>
-                </div>
-                <div class="terminal-entry">
-                  <div class="term-prompt"><span>$</span> <span class="term-cmd">pwd</span></div>
-                  <div class="term-output">/home/afnan/devops-journey</div>
-                </div>
-                <div class="terminal-entry">
-                  <div class="term-prompt"><span>$</span> <span class="term-cmd">git status</span></div>
-                  <div class="term-output success">Learning. Building. Improving.</div>
-                </div>
-              </noscript>
-            </div>
+        <!-- Scroll Cue Indicator -->
+        <div class="hero-scroll-cue" id="hero-scroll-cue" aria-hidden="true">
+          <span class="cue-label">SCROLL TO DISCOVER</span>
+          <div class="cue-mouse">
+            <span class="cue-wheel"></span>
           </div>
         </div>
 
       </div>
-    </section>
+    </div>
 
     <!-- -----------------------------------------------------------------------
-         ABOUT ME SECTION
+         SECTION 1: ABOUT ME (EDITORIAL TECHNOLOGY PROFILE)
          ----------------------------------------------------------------------- -->
-    <section class="section about-section" id="about" aria-labelledby="about-title">
+    <section class="section about-section" id="about" aria-labelledby="about-heading">
       <div class="container">
         
-        <div class="section-header reveal-item">
-          <span class="section-tag">// Profile Overview</span>
-          <h2 class="section-title" id="about-title">About Me</h2>
-          <p class="section-subtitle">
-            Solid computer science fundamentals paired with focused, hands-on DevOps and cloud infrastructure practices.
-          </p>
+        <div class="section-badge-wrapper">
+          <span class="section-badge">
+            <span class="badge-dot"></span>
+            <span>01 // PROFESSIONAL IDENTITY</span>
+          </span>
         </div>
 
         <div class="about-grid">
           
-          <!-- Detailed Bio Card -->
-          <div class="about-intro-card reveal-item">
-            <h3 class="about-intro-lead">Building reliable infrastructure from the ground up.</h3>
-            <p class="about-intro-text">
-              I hold a B.Tech in Computer Science and Engineering and have developed a strong passion for DevOps engineering and cloud operations. My academic background provided me with a rigorous foundation in operating systems, networking fundamentals, distributed systems, and computer architectures.
-            </p>
-            <p class="about-intro-text">
-              Rather than relying solely on theoretical knowledge, I actively practice in virtual machines and cloud lab environments—writing Bash scripts to automate Linux system tasks, configuring Nginx web servers from scratch, practicing branch management on Git/GitHub, and deploying infrastructure resources using AWS services.
-            </p>
+          <!-- Left Column: Editorial Bio -->
+          <div class="about-bio-col">
+            <h2 class="section-title" id="about-heading">
+              Rooted in Linux Systems.<br>
+              <span class="text-teal">Building Toward Automation.</span>
+            </h2>
+
+            <div class="about-quote-card">
+              <div class="quote-mark" aria-hidden="true">&ldquo;</div>
+              <blockquote class="about-blockquote">
+                I'm a Computer Science graduate and Red Hat Certified System Administrator (RHCSA) with hands-on experience in Red Hat Enterprise Linux and a strong foundation in Linux system administration, networking, and server fundamentals.
+                <br><br>
+                I'm proficient in Linux command-line administration, user and group management, file permissions, storage management, LVM, systemd, SSH, and network configuration.
+                <br><br>
+                I enjoy troubleshooting technical problems and building practical solutions, and I'm focused on developing my skills in enterprise infrastructure, DevOps, cloud technologies, and automation.
+              </blockquote>
+            </div>
+
+            <!-- Quick Specs Row -->
+            <div class="about-specs-grid">
+              <div class="spec-card">
+                <span class="spec-label">STATUS</span>
+                <span class="spec-value text-teal">RHCSA Certified</span>
+                <span class="spec-sub">August 2026</span>
+              </div>
+              <div class="spec-card">
+                <span class="spec-label">EDUCATION</span>
+                <span class="spec-value">B.Tech in CSE</span>
+                <span class="spec-sub">Vidya Academy &bull; CGPA 7.34</span>
+              </div>
+              <div class="spec-card">
+                <span class="spec-label">LOCATION</span>
+                <span class="spec-value">Thrissur, India</span>
+                <span class="spec-sub">Open to Relocation / Remote</span>
+              </div>
+              <div class="spec-card">
+                <span class="spec-label">PRIMARY FOCUS</span>
+                <span class="spec-value text-teal">DevOps &amp; Linux</span>
+                <span class="spec-sub">Systems Administration</span>
+              </div>
+            </div>
           </div>
 
-          <!-- 4 Information Cards -->
-          <div class="about-cards-grid">
-            
-            <!-- Card 1: Background -->
-            <div class="info-card reveal-item delay-1">
-              <div class="info-card-icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M6 6h10"/><path d="M6 10h10"/></svg>
+          <!-- Right Column: System Architecture & Terminal Telemetry -->
+          <div class="about-telemetry-col">
+            <div class="telemetry-terminal-card">
+              <div class="terminal-bar">
+                <div class="terminal-dots">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <span class="terminal-title">afnan@rhel-node01: ~/profile</span>
+                <span class="terminal-tag">BASH</span>
               </div>
-              <span class="info-card-label">Core Education</span>
-              <h4 class="info-card-title">Computer Science Engineering</h4>
-              <p class="info-card-desc">
-                Strong technical base in operating system design, Unix principles, TCP/IP networks, and algorithmic problem-solving.
-              </p>
+              
+              <div class="terminal-content">
+                <div class="terminal-row">
+                  <span class="t-prompt">$</span>
+                  <span class="t-cmd">uname -a</span>
+                </div>
+                <div class="t-output">Linux rhel-node01 5.14.0-427.el9.x86_64 #1 SMP PREEMPT_DYNAMIC x86_64 GNU/Linux</div>
+
+                <div class="terminal-row">
+                  <span class="t-prompt">$</span>
+                  <span class="t-cmd">systemctl status career-path.service</span>
+                </div>
+                <div class="t-output t-tree">
+                  <span class="t-active">&#9679;</span> career-path.service - Enterprise DevOps &amp; Cloud Transition<br>
+                  &nbsp;&nbsp;&nbsp;Loaded: loaded (/etc/systemd/system/career-path.service; enabled)<br>
+                  &nbsp;&nbsp;&nbsp;Active: <span class="t-green">active (running)</span> since 2022-09-01<br>
+                  &nbsp;&nbsp;&nbsp;Main PID: 2026 (RHCSA-SysAdmin)<br>
+                  &nbsp;&nbsp;&nbsp;Tasks: 4 (Linux, Automation, Cloud, Networking)<br>
+                  &nbsp;&nbsp;&nbsp;Memory: Optimal<br>
+                  &nbsp;&nbsp;&nbsp;CGroup: /system.slice/career-path.service<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&boxur;&boxh;2026 /usr/bin/bash /opt/devops/continuous-learning.sh
+                </div>
+
+                <div class="terminal-row">
+                  <span class="t-prompt">$</span>
+                  <span class="t-cmd">cat /etc/profile.d/core_competencies.sh</span>
+                </div>
+                <div class="t-output">
+                  <span class="t-comment"># Identity: Mohammed Afnan K A</span><br>
+                  export OS="Red Hat Enterprise Linux 9 / Linux CLI"<br>
+                  export STORAGE="LVM, XFS, EXT4, AutoFS, NFS"<br>
+                  export AUTOMATION="Bash, Cron, Git, AWS EC2"<br>
+                  export CERTIFICATION="Red Hat Certified System Administrator"<br>
+                  export PASSION="Reliability &bull; Infrastructure as Code &bull; Observability"
+                </div>
+
+                <div class="terminal-row prompt-active">
+                  <span class="t-prompt">$</span>
+                  <span class="t-cursor">_</span>
+                </div>
+              </div>
             </div>
 
-            <!-- Card 2: Current Focus -->
-            <div class="info-card reveal-item delay-2">
-              <div class="info-card-icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
+            <!-- Target Roles Card -->
+            <div class="target-roles-card">
+              <h3 class="target-title">
+                <svg class="icon-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <circle cx="12" cy="12" r="6"></circle>
+                  <circle cx="12" cy="12" r="2"></circle>
+                </svg>
+                <span>Target Roles</span>
+              </h3>
+              <div class="roles-tags-list">
+                <span class="role-chip">Junior DevOps Engineer</span>
+                <span class="role-chip">Linux System Administrator</span>
+                <span class="role-chip">System Engineer</span>
+                <span class="role-chip">Cloud Support Engineer</span>
+                <span class="role-chip">Infrastructure Support Engineer</span>
               </div>
-              <span class="info-card-label">Specialization</span>
-              <h4 class="info-card-title">DevOps and Cloud Computing</h4>
-              <p class="info-card-desc">
-                Focusing on Linux server administration, AWS cloud services, infrastructure automation, and container orchestration concepts.
-              </p>
-            </div>
-
-            <!-- Card 3: Learning Style -->
-            <div class="info-card reveal-item delay-3">
-              <div class="info-card-icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="m9 8 6 4-6 4Z"/></svg>
-              </div>
-              <span class="info-card-label">Methodology</span>
-              <h4 class="info-card-title">Hands-on Projects</h4>
-              <p class="info-card-desc">
-                Learning through doing: spinning up local VMs, breaking and fixing service configurations, inspecting logs, and automating repetitive tasks.
-              </p>
-            </div>
-
-            <!-- Card 4: Career Goal -->
-            <div class="info-card reveal-item delay-4">
-              <div class="info-card-icon" aria-hidden="true">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="12 6 15.5 10 19 14 12 18 5 14 8.5 10 12 6"/></svg>
-              </div>
-              <span class="info-card-label">Objective</span>
-              <h4 class="info-card-title">Entry-Level DevOps Opportunities</h4>
-              <p class="info-card-desc">
-                Targeting Entry-level DevOps Engineer, Cloud Engineer, or Linux System Administrator positions where I can contribute and expand my skills.
-              </p>
             </div>
 
           </div>
@@ -253,496 +399,1032 @@
     </section>
 
     <!-- -----------------------------------------------------------------------
-         SKILLS SECTION
+         SECTION 2: TECHNICAL SKILLS (GROUPED & FILTERABLE)
          ----------------------------------------------------------------------- -->
-    <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+    <section class="section skills-section" id="skills" aria-labelledby="skills-heading">
       <div class="container">
         
-        <div class="section-header reveal-item">
-          <span class="section-tag">// Technical Toolkit</span>
-          <h2 class="section-title" id="skills-title">Technical Skills</h2>
-          <p class="section-subtitle">
-            Practical proficiencies categorized by discipline, labeled transparently to reflect active learning stages.
-          </p>
+        <div class="section-badge-wrapper">
+          <span class="section-badge">
+            <span class="badge-dot"></span>
+            <span>02 // CAPABILITIES &amp; EXPERTISE</span>
+          </span>
         </div>
 
-        <!-- Filter navigation for skills -->
-        <div class="skills-filter-nav reveal-item">
-          <button class="skill-tab-btn active" data-skill-filter="all">All Disciplines</button>
-          <button class="skill-tab-btn" data-skill-filter="linux">Linux &amp; Systems</button>
-          <button class="skill-tab-btn" data-skill-filter="git">Version Control</button>
-          <button class="skill-tab-btn" data-skill-filter="cloud">Cloud (AWS)</button>
-          <button class="skill-tab-btn" data-skill-filter="networking">Networking &amp; Web</button>
-          <button class="skill-tab-btn" data-skill-filter="automation">Automation</button>
-        </div>
-
-        <!-- Skills Grid -->
-        <div class="skills-grid">
-          
-          <!-- Category 1: Linux & SysAdmin -->
-          <div class="skill-category-card reveal-item" data-category="linux">
-            <div class="skill-cat-header">
-              <div class="skill-cat-icon" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
-              </div>
-              <h3 class="skill-cat-title">Linux and System Administration</h3>
-            </div>
-            <div class="skills-list">
-              <div class="skill-badge"><span>Linux</span> <span class="skill-level-tag practicing">Practicing</span></div>
-              <div class="skill-badge"><span>Ubuntu</span> <span class="skill-level-tag practicing">Practicing</span></div>
-              <div class="skill-badge"><span>Bash scripting</span> <span class="skill-level-tag practicing">Practicing</span></div>
-              <div class="skill-badge"><span>File permissions</span> <span class="skill-level-tag practicing">Practicing</span></div>
-              <div class="skill-badge"><span>Process management</span> <span class="skill-level-tag practicing">Practicing</span></div>
-              <div class="skill-badge"><span>Service management</span> <span class="skill-level-tag practicing">Practicing</span></div>
-              <div class="skill-badge"><span>System monitoring</span> <span class="skill-level-tag learning">Learning</span></div>
-              <div class="skill-badge"><span>Log analysis</span> <span class="skill-level-tag learning">Learning</span></div>
-            </div>
-          </div>
-
-          <!-- Category 2: Version Control -->
-          <div class="skill-category-card reveal-item delay-1" data-category="git">
-            <div class="skill-cat-header">
-              <div class="skill-cat-icon" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" x2="6" y1="3" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>
-              </div>
-              <h3 class="skill-cat-title">Version Control</h3>
-            </div>
-            <div class="skills-list">
-              <div class="skill-badge"><span>Git</span> <span class="skill-level-tag practicing">Practicing</span></div>
-              <div class="skill-badge"><span>GitHub</span> <span class="skill-level-tag practicing">Practicing</span></div>
-              <div class="skill-badge"><span>Branching and merging</span> <span class="skill-level-tag practicing">Practicing</span></div>
-            </div>
-          </div>
-
-          <!-- Category 3: Cloud -->
-          <div class="skill-category-card reveal-item delay-2" data-category="cloud">
-            <div class="skill-cat-header">
-              <div class="skill-cat-icon" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/></svg>
-              </div>
-              <h3 class="skill-cat-title">Cloud Infrastructure</h3>
-            </div>
-            <div class="skills-list">
-              <div class="skill-badge"><span>AWS fundamentals</span> <span class="skill-level-tag learning">Learning</span></div>
-              <div class="skill-badge"><span>Amazon EC2</span> <span class="skill-level-tag learning">Learning</span></div>
-              <div class="skill-badge"><span>Amazon S3</span> <span class="skill-level-tag learning">Learning</span></div>
-              <div class="skill-badge"><span>AWS IAM</span> <span class="skill-level-tag learning">Learning</span></div>
-              <div class="skill-badge"><span>CloudFormation fundamentals</span> <span class="skill-level-tag learning">Learning</span></div>
-            </div>
-          </div>
-
-          <!-- Category 4: Web and Networking -->
-          <div class="skill-category-card reveal-item delay-1" data-category="networking">
-            <div class="skill-cat-header">
-              <div class="skill-cat-icon" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-              </div>
-              <h3 class="skill-cat-title">Web and Networking</h3>
-            </div>
-            <div class="skills-list">
-              <div class="skill-badge"><span>Nginx</span> <span class="skill-level-tag practicing">Practicing</span></div>
-              <div class="skill-badge"><span>HTTP/HTTPS</span> <span class="skill-level-tag familiar">Familiar</span></div>
-              <div class="skill-badge"><span>DNS fundamentals</span> <span class="skill-level-tag familiar">Familiar</span></div>
-              <div class="skill-badge"><span>Networking fundamentals</span> <span class="skill-level-tag familiar">Familiar</span></div>
-            </div>
-          </div>
-
-          <!-- Category 5: Automation -->
-          <div class="skill-category-card reveal-item delay-2" data-category="automation">
-            <div class="skill-cat-header">
-              <div class="skill-cat-icon" aria-hidden="true">
-                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4"/><path d="m4.93 4.93 2.83 2.83"/><path d="M2 12h4"/><path d="m4.93 19.07 2.83-2.83"/><path d="M12 18v4"/><path d="m19.07 19.07-2.83-2.83"/><path d="M18 12h4"/><path d="m19.07 4.93-2.83 2.83"/></svg>
-              </div>
-              <h3 class="skill-cat-title">Automation &amp; CI/CD</h3>
-            </div>
-            <div class="skills-list">
-              <div class="skill-badge"><span>Python fundamentals</span> <span class="skill-level-tag familiar">Familiar</span></div>
-              <div class="skill-badge"><span>Docker fundamentals</span> <span class="skill-level-tag learning">Learning</span></div>
-              <div class="skill-badge"><span>CI/CD fundamentals</span> <span class="skill-level-tag learning">Learning</span></div>
-              <div class="skill-badge"><span>GitHub Actions fundamentals</span> <span class="skill-level-tag learning">Learning</span></div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="skills-note reveal-item">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" x2="12" y1="16" y2="12"/><line x1="12" x2="12.01" y1="8" y2="8"/></svg>
-          <span>Skill levels are strictly self-assessed based on real laboratory exercises and current curriculum progress.</span>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- -----------------------------------------------------------------------
-         PROJECTS SECTION
-         ----------------------------------------------------------------------- -->
-    <section class="section projects-section" id="projects" aria-labelledby="projects-title">
-      <div class="container">
-        
-        <div class="section-header reveal-item">
-          <span class="section-tag">// Hands-On Labs</span>
-          <h2 class="section-title" id="projects-title">Practical Projects</h2>
-          <p class="section-subtitle">
-            Hands-on implementation projects focused on Linux administration, web server deployments, source control, and cloud infrastructure.
-          </p>
-        </div>
-
-        <!-- Project Filtering Buttons -->
-        <div class="projects-filter-nav reveal-item">
-          <button class="project-filter-btn active" data-filter="all">All Projects</button>
-          <button class="project-filter-btn" data-filter="linux">Linux &amp; Bash</button>
-          <button class="project-filter-btn" data-filter="web">Web &amp; Nginx</button>
-          <button class="project-filter-btn" data-filter="git">Git Workflow</button>
-          <button class="project-filter-btn" data-filter="cloud">AWS Cloud</button>
-        </div>
-
-        <!-- Projects Grid -->
-        <div class="projects-grid">
-          
-          <!-- Project 1: Linux System Monitoring Tool -->
-          <article class="project-card reveal-item" data-category="linux">
-            <div>
-              <div class="project-card-header">
-                <h3 class="project-title">Linux System Monitoring Tool</h3>
-                <span class="project-status-badge in-progress">In Progress</span>
-              </div>
-              
-              <p class="project-desc">
-                A Linux monitoring project focused on checking CPU usage, memory utilization, disk space, running processes, and basic system health using Linux commands and Bash scripts.
-              </p>
-
-              <div class="project-details-box">
-                <div class="project-details-title">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-                  Current Implementation &amp; Roadmap
-                </div>
-                <ul class="project-details-list">
-                  <li>Automates checks using <code>top</code>, <code>free -m</code>, <code>df -h</code>, and <code>ps aux</code>.</li>
-                  <li>Generates time-stamped log files for threshold violations.</li>
-                  <li><strong>Future Improvement:</strong> Adding automated email notifications and lightweight HTML health dashboard generation.</li>
-                </ul>
-              </div>
-
-              <div class="project-tech-tags">
-                <span class="tech-tag">Ubuntu</span>
-                <span class="tech-tag">Linux</span>
-                <span class="tech-tag">Bash</span>
-              </div>
-            </div>
-
-            <div class="project-card-footer">
-              <a href="https://github.com/yourusername/linux-system-monitor" class="project-link-btn placeholder-link" data-info="GitHub Repository for Linux System Monitoring Tool" target="_blank" rel="noopener noreferrer">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
-                View Repository
-              </a>
-              <span class="placeholder-indicator">[Placeholder Repo Link]</span>
-            </div>
-          </article>
-
-          <!-- Project 2: Nginx Web Server Deployment -->
-          <article class="project-card reveal-item delay-1" data-category="web linux">
-            <div>
-              <div class="project-card-header">
-                <h3 class="project-title">Nginx Web Server Deployment</h3>
-                <span class="project-status-badge in-progress">In Progress</span>
-              </div>
-              
-              <p class="project-desc">
-                A practical project involving Nginx installation, service management, hosting a static webpage, inspecting access and error logs, and troubleshooting web server issues.
-              </p>
-
-              <div class="project-details-box">
-                <div class="project-details-title">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-                  Current Implementation &amp; Roadmap
-                </div>
-                <ul class="project-details-list">
-                  <li>Configuring custom server blocks (virtual hosts) in <code>/etc/nginx/sites-available</code>.</li>
-                  <li>Investigating HTTP response codes and analyzing access &amp; error log streams.</li>
-                  <li><strong>Future Improvement:</strong> Implementing Let's Encrypt SSL/TLS certificates and configuring a reverse proxy for backend applications.</li>
-                </ul>
-              </div>
-
-              <div class="project-tech-tags">
-                <span class="tech-tag">Ubuntu</span>
-                <span class="tech-tag">Nginx</span>
-                <span class="tech-tag">Linux</span>
-              </div>
-            </div>
-
-            <div class="project-card-footer">
-              <a href="https://github.com/yourusername/nginx-server-deployment" class="project-link-btn placeholder-link" data-info="GitHub Repository for Nginx Web Server Deployment" target="_blank" rel="noopener noreferrer">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
-                View Repository
-              </a>
-              <span class="placeholder-indicator">[Placeholder Repo Link]</span>
-            </div>
-          </article>
-
-          <!-- Project 3: Git and GitHub Workflow -->
-          <article class="project-card reveal-item" data-category="git">
-            <div>
-              <div class="project-card-header">
-                <h3 class="project-title">Git and GitHub Workflow</h3>
-                <span class="project-status-badge practicing">Practicing</span>
-              </div>
-              
-              <p class="project-desc">
-                A project demonstrating repository initialization, commits, branches, merging, and source code management.
-              </p>
-
-              <div class="project-details-box">
-                <div class="project-details-title">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-                  Current Implementation &amp; Roadmap
-                </div>
-                <ul class="project-details-list">
-                  <li>Structured feature-branch workflows, rebasing, and merge conflict resolution.</li>
-                  <li>Writing conventional commit messages and repository documentation.</li>
-                  <li><strong>Future Improvement:</strong> Creating automated pre-commit linting hooks and integrating GitHub Actions for CI.</li>
-                </ul>
-              </div>
-
-              <div class="project-tech-tags">
-                <span class="tech-tag">Git</span>
-                <span class="tech-tag">GitHub</span>
-              </div>
-            </div>
-
-            <div class="project-card-footer">
-              <a href="https://github.com/yourusername/git-workflow-lab" class="project-link-btn placeholder-link" data-info="GitHub Repository for Git and GitHub Workflow" target="_blank" rel="noopener noreferrer">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
-                View Repository
-              </a>
-              <span class="placeholder-indicator">[Placeholder Repo Link]</span>
-            </div>
-          </article>
-
-          <!-- Project 4: AWS Cloud Fundamentals -->
-          <article class="project-card reveal-item delay-1" data-category="cloud">
-            <div>
-              <div class="project-card-header">
-                <h3 class="project-title">AWS Cloud Fundamentals</h3>
-                <span class="project-status-badge planned">Planned</span>
-              </div>
-              
-              <p class="project-desc">
-                A learning project exploring foundational AWS services and cloud infrastructure concepts.
-              </p>
-
-              <div class="project-details-box">
-                <div class="project-details-title">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
-                  Current Implementation &amp; Roadmap
-                </div>
-                <ul class="project-details-list">
-                  <li>Deploying virtual servers on Amazon EC2 and defining inbound Security Groups.</li>
-                  <li>Managing S3 buckets, object versioning, and IAM role security policies.</li>
-                  <li><strong>Future Improvement:</strong> Provisioning a multi-tier VPC network using AWS CloudFormation templates.</li>
-                </ul>
-              </div>
-
-              <div class="project-tech-tags">
-                <span class="tech-tag">AWS</span>
-                <span class="tech-tag">EC2</span>
-                <span class="tech-tag">S3</span>
-                <span class="tech-tag">IAM</span>
-                <span class="tech-tag">CloudFormation</span>
-              </div>
-            </div>
-
-            <div class="project-card-footer">
-              <a href="https://github.com/yourusername/aws-cloud-fundamentals" class="project-link-btn placeholder-link" data-info="GitHub Repository for AWS Cloud Fundamentals" target="_blank" rel="noopener noreferrer">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
-                View Repository
-              </a>
-              <span class="placeholder-indicator">[Placeholder Repo Link]</span>
-            </div>
-          </article>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- -----------------------------------------------------------------------
-         LEARNING JOURNEY (ROADMAP) SECTION
-         ----------------------------------------------------------------------- -->
-    <section class="section journey-section" id="journey" aria-labelledby="journey-title">
-      <div class="container journey-container">
-        
-        <div class="section-header reveal-item">
-          <span class="section-tag">// Step-By-Step Progression</span>
-          <h2 class="section-title" id="journey-title">DevOps Learning Journey</h2>
-          <p class="section-subtitle">
-            A structured path through systems, networking, cloud, and automation milestones. Configurable directly in JavaScript.
-          </p>
-        </div>
-
-        <!-- Dynamic Roadmap Timeline generated by js/script.js -->
-        <div class="roadmap-timeline" id="journey-timeline">
-          <!-- Fallback items for no-JS environments -->
-          <noscript>
-            <div class="roadmap-item completed">
-              <div class="roadmap-marker"><span>01</span></div>
-              <div class="roadmap-card">
-                <div class="roadmap-card-header">
-                  <h3 class="roadmap-stage-title">Linux Fundamentals</h3>
-                  <span class="roadmap-status-pill completed">Practicing</span>
-                </div>
-                <p class="roadmap-desc">Command line basics, permissions, package managers, and bash scripting.</p>
-              </div>
-            </div>
-          </noscript>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- -----------------------------------------------------------------------
-         EDUCATION SECTION
-         ----------------------------------------------------------------------- -->
-    <section class="section education-section" id="education" aria-labelledby="education-title">
-      <div class="container education-container">
-        
-        <div class="section-header reveal-item">
-          <span class="section-tag">// Academic Background</span>
-          <h2 class="section-title" id="education-title">Education</h2>
-          <p class="section-subtitle">
-            Foundational computer science degree powering my systems-level DevOps learning.
-          </p>
-        </div>
-
-        <div class="education-card reveal-item">
-          <div class="education-icon-wrapper" aria-hidden="true">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
-          </div>
-          
-          <div class="education-content">
-            <h3 class="education-degree">B.Tech in Computer Science and Engineering</h3>
-            
-            <div class="education-meta">
-              <span class="edu-institution">Institution: <span class="placeholder-pill">[Your College Name]</span></span>
-              <span>•</span>
-              <span class="edu-year">Graduation Year: <span class="placeholder-pill">[Your Graduation Year]</span></span>
-            </div>
-
-            <p class="education-summary">
-              Graduated with rigorous coursework covering Operating Systems, Computer Networks, Database Management Systems, Data Structures &amp; Algorithms, and Object-Oriented Software Engineering. These concepts translate directly into understanding infrastructure design, network protocols, and Linux system architectures.
+        <div class="section-header-row">
+          <div>
+            <h2 class="section-title" id="skills-heading">
+              Technical Competencies.<br>
+              <span class="text-teal">Grounded in Linux Fundamentals.</span>
+            </h2>
+            <p class="section-description">
+              Strictly representing hands-on skills practiced through RHEL lab administration, college projects, and clear learning milestones.
             </p>
           </div>
+
+          <!-- Skill Filter Tabs -->
+          <div class="skill-filters" role="tablist" aria-label="Skill category filters">
+            <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">All Skills</button>
+            <button class="filter-tab" data-filter="linux" role="tab" aria-selected="false">Linux &amp; Systems</button>
+            <button class="filter-tab" data-filter="network" role="tab" aria-selected="false">Networking</button>
+            <button class="filter-tab" data-filter="scripting" role="tab" aria-selected="false">Scripting &amp; Tools</button>
+            <button class="filter-tab" data-filter="learning" role="tab" aria-selected="false">DevOps Roadmap</button>
+          </div>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          
+          <!-- Category 1: Operating Systems -->
+          <div class="skill-group-card" data-category="linux">
+            <div class="group-header">
+              <div class="group-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <div class="group-meta">
+                <h3 class="group-title">Operating Systems</h3>
+                <span class="group-count">2 Technologies</span>
+              </div>
+            </div>
+            <ul class="skills-pill-list">
+              <li class="skill-pill highlighted"><span class="pill-dot"></span>Red Hat Enterprise Linux (RHEL)</li>
+              <li class="skill-pill"><span class="pill-dot"></span>Linux Distributions</li>
+            </ul>
+          </div>
+
+          <!-- Category 2: Linux System Administration (Core) -->
+          <div class="skill-group-card" data-category="linux">
+            <div class="group-header">
+              <div class="group-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="4 17 10 11 4 5"></polyline>
+                  <line x1="12" y1="19" x2="20" y2="19"></line>
+                </svg>
+              </div>
+              <div class="group-meta">
+                <h3 class="group-title">Linux Administration</h3>
+                <span class="group-count">11 Competencies</span>
+              </div>
+            </div>
+            <ul class="skills-pill-list">
+              <li class="skill-pill"><span class="pill-dot"></span>Linux Command Line</li>
+              <li class="skill-pill"><span class="pill-dot"></span>User &amp; Group Management</li>
+              <li class="skill-pill"><span class="pill-dot"></span>File Permissions (chmod/chown)</li>
+              <li class="skill-pill"><span class="pill-dot"></span>Storage Management &amp; Partitions</li>
+              <li class="skill-pill"><span class="pill-dot"></span>XFS &amp; EXT4 Filesystems</li>
+              <li class="skill-pill highlighted"><span class="pill-dot"></span>Logical Volume Manager (LVM)</li>
+              <li class="skill-pill"><span class="pill-dot"></span>systemd &amp; Service Management</li>
+              <li class="skill-pill"><span class="pill-dot"></span>Process Management (ps/top/kill)</li>
+              <li class="skill-pill"><span class="pill-dot"></span>Package Management (dnf/rpm)</li>
+              <li class="skill-pill"><span class="pill-dot"></span>SSH &amp; Remote Access</li>
+              <li class="skill-pill"><span class="pill-dot"></span>sudo &amp; sudoers configuration</li>
+            </ul>
+          </div>
+
+          <!-- Category 3: Networking -->
+          <div class="skill-group-card" data-category="network">
+            <div class="group-header">
+              <div class="group-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="2" width="6" height="6" rx="1"></rect>
+                  <rect x="16" y="2" width="6" height="6" rx="1"></rect>
+                  <rect x="9" y="16" width="6" height="6" rx="1"></rect>
+                  <path d="M5 8v3a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8"></path>
+                  <path d="M12 12v4"></path>
+                </svg>
+              </div>
+              <div class="group-meta">
+                <h3 class="group-title">Networking</h3>
+                <span class="group-count">6 Protocols &amp; Concepts</span>
+              </div>
+            </div>
+            <ul class="skills-pill-list">
+              <li class="skill-pill"><span class="pill-dot"></span>TCP/IP</li>
+              <li class="skill-pill"><span class="pill-dot"></span>IPv4 &amp; Addressing</li>
+              <li class="skill-pill"><span class="pill-dot"></span>DNS</li>
+              <li class="skill-pill"><span class="pill-dot"></span>DHCP</li>
+              <li class="skill-pill"><span class="pill-dot"></span>Network Configuration (nmcli/ip)</li>
+              <li class="skill-pill"><span class="pill-dot"></span>Subnetting &amp; Routing</li>
+            </ul>
+          </div>
+
+          <!-- Category 4: Server Administration -->
+          <div class="skill-group-card" data-category="linux">
+            <div class="group-header">
+              <div class="group-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                  <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                  <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                  <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                </svg>
+              </div>
+              <div class="group-meta">
+                <h3 class="group-title">Server Administration</h3>
+                <span class="group-count">4 Services</span>
+              </div>
+            </div>
+            <ul class="skills-pill-list">
+              <li class="skill-pill"><span class="pill-dot"></span>NFS (Network File System)</li>
+              <li class="skill-pill"><span class="pill-dot"></span>AutoFS on-demand mounts</li>
+              <li class="skill-pill"><span class="pill-dot"></span>Remote Server Administration</li>
+              <li class="skill-pill"><span class="pill-dot"></span>Daemon &amp; Service Management</li>
+            </ul>
+          </div>
+
+          <!-- Category 5: Scripting & Programming -->
+          <div class="skill-group-card" data-category="scripting">
+            <div class="group-header">
+              <div class="group-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <div class="group-meta">
+                <h3 class="group-title">Scripting &amp; Programming</h3>
+                <span class="group-count">4 Languages</span>
+              </div>
+            </div>
+            <ul class="skills-pill-list">
+              <li class="skill-pill highlighted"><span class="pill-dot"></span>Bash &amp; Shell Scripting</li>
+              <li class="skill-pill"><span class="pill-dot"></span>Python</li>
+              <li class="skill-pill"><span class="pill-dot"></span>SQL (Database Programming)</li>
+              <li class="skill-pill"><span class="pill-dot"></span>Java Fundamentals</li>
+            </ul>
+          </div>
+
+          <!-- Category 6: Developer Tools -->
+          <div class="skill-group-card" data-category="scripting">
+            <div class="group-header">
+              <div class="group-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <div class="group-meta">
+                <h3 class="group-title">Tools &amp; Environments</h3>
+                <span class="group-count">3 Development Tools</span>
+              </div>
+            </div>
+            <ul class="skills-pill-list">
+              <li class="skill-pill"><span class="pill-dot"></span>Git &amp; GitHub</li>
+              <li class="skill-pill"><span class="pill-dot"></span>Visual Studio Code</li>
+              <li class="skill-pill"><span class="pill-dot"></span>PyCharm</li>
+            </ul>
+          </div>
+
+          <!-- Category 7: Core Computer Science -->
+          <div class="skill-group-card" data-category="scripting">
+            <div class="group-header">
+              <div class="group-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                  <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+              </div>
+              <div class="group-meta">
+                <h3 class="group-title">Core Computer Science</h3>
+                <span class="group-count">3 Academic Disciplines</span>
+              </div>
+            </div>
+            <ul class="skills-pill-list">
+              <li class="skill-pill"><span class="pill-dot"></span>Operating Systems</li>
+              <li class="skill-pill"><span class="pill-dot"></span>Computer Networks</li>
+              <li class="skill-pill"><span class="pill-dot"></span>Database Management Systems (DBMS)</li>
+            </ul>
+          </div>
+
+          <!-- Category 8: DevOps Learning Focus (Explicitly Marked Learning) -->
+          <div class="skill-group-card learning-card" data-category="learning">
+            <div class="group-header">
+              <div class="group-icon learning-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                </svg>
+              </div>
+              <div class="group-meta">
+                <div class="learning-badge-tag">ACTIVE LEARNING FOCUS</div>
+                <h3 class="group-title">DevOps &amp; Cloud Transition</h3>
+                <span class="group-count">7 Growth Areas</span>
+              </div>
+            </div>
+            <ul class="skills-pill-list">
+              <li class="skill-pill learning-pill"><span class="badge-learn">LEARNING</span>Linux Automation</li>
+              <li class="skill-pill learning-pill"><span class="badge-learn">LEARNING</span>Advanced Bash Scripting</li>
+              <li class="skill-pill learning-pill"><span class="badge-learn">LEARNING</span>Cron Scheduling</li>
+              <li class="skill-pill learning-pill"><span class="badge-learn">LEARNING</span>Git CI/CD Workflows</li>
+              <li class="skill-pill learning-pill"><span class="badge-learn">LEARNING</span>AWS EC2 Fundamentals</li>
+              <li class="skill-pill learning-pill"><span class="badge-learn">LEARNING</span>CI/CD Concepts</li>
+              <li class="skill-pill learning-pill"><span class="badge-learn">LEARNING</span>Cloud Infrastructure Basics</li>
+            </ul>
+          </div>
+
         </div>
 
       </div>
     </section>
 
     <!-- -----------------------------------------------------------------------
-         CONTACT SECTION
+         SECTION 3: FEATURED PROJECTS (DETAILED SHOWCASE)
          ----------------------------------------------------------------------- -->
-    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
-      <div class="container contact-container">
+    <section class="section projects-section" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
         
-        <div class="section-header reveal-item">
-          <span class="section-tag">// Get In Touch</span>
-          <h2 class="section-title" id="contact-title">Connect With Me</h2>
-          <p class="section-subtitle">
-            Actively seeking entry-level DevOps, Cloud Engineering, and Linux System Administrator opportunities.
+        <div class="section-badge-wrapper">
+          <span class="section-badge">
+            <span class="badge-dot"></span>
+            <span>03 // HANDS-ON WORK</span>
+          </span>
+        </div>
+
+        <div class="section-header-block">
+          <h2 class="section-title" id="projects-heading">
+            Featured Projects.<br>
+            <span class="text-teal">Real Implementations &amp; Workflows.</span>
+          </h2>
+          <p class="section-description">
+            Showcasing real technical work across Linux automation scripting, full-stack medical AI platforms, and machine learning classifiers.
           </p>
         </div>
 
-        <div class="contact-layout reveal-item">
+        <div class="projects-stack">
           
-          <!-- Contact Left: Bio & Opportunities -->
-          <div class="contact-card">
-            <div>
-              <h3 class="contact-card-title">Let's Discuss Opportunities</h3>
-              <p class="contact-card-text">
-                Whether you have an entry-level position open, a mentorship opportunity, or would like to discuss practical DevOps projects and system administration labs, I'd love to hear from you.
-              </p>
+          <!-- PROJECT 1: Linux System Resource Monitoring (PRIMARY DEVOPS HIGHLIGHT) -->
+          <article class="project-card highlight-project">
+            <div class="project-content-grid">
+              
+              <!-- Left Visual Side: Real Asset + Terminal Frame -->
+              <div class="project-media-side">
+                <div class="project-window-frame">
+                  <div class="window-topbar">
+                    <div class="window-dots">
+                      <span class="dot red"></span>
+                      <span class="dot yellow"></span>
+                      <span class="dot green"></span>
+                    </div>
+                    <span class="window-title">bash &mdash; monitoring.sh (AWS EC2 / RHEL)</span>
+                    <span class="window-badge">CRON @ 00:00</span>
+                  </div>
+                  
+                  <div class="project-image-wrapper">
+                    <img 
+                      src="assets/images/linux-monitoring.png" 
+                      alt="Linux System Resource Monitoring Terminal Screenshot"
+                      class="project-preview-img"
+                      loading="lazy"
+                    >
+                    <div class="image-gradient-vignette" aria-hidden="true"></div>
+                  </div>
 
-              <div class="contact-status-box">
-                <span class="status-pulse" aria-hidden="true"></span>
-                <p class="contact-status-text">
-                  <strong>Available for Hiring:</strong> Open to full-time entry-level DevOps, Cloud, and Junior System Administration positions (Remote or On-site in India).
+                  <!-- Quick Terminal Snippet Preview Overlay -->
+                  <div class="project-code-snippet">
+                    <div class="snippet-title">monitoring.sh snippet</div>
+                    <pre class="snippet-body"><code><span class="c-comment">#!/bin/bash</span>
+<span class="c-comment"># Scheduled execution via cron at midnight</span>
+LOGFILE="/var/log/system_monitor_$(date +%F).log"
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] CPU: $(top -bn1 | grep 'Cpu(s)')" &gt;&gt; $LOGFILE
+echo "[$(date '+%Y-%m-%d %H:%M:%S')] MEM: $(free -h | awk '/Mem:/ {print $3 "/" $2}')" &gt;&gt; $LOGFILE</code></pre>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right Info Side -->
+              <div class="project-details-side">
+                <div class="project-badge-row">
+                  <span class="badge-tech-primary">Linux Automation &bull; DevOps</span>
+                  <span class="badge-env">AWS EC2 Verified</span>
+                </div>
+
+                <h3 class="project-name">Shell Scripting with AWS EC2, Bash &amp; Git</h3>
+                <p class="project-headline-sub">Linux System Resource Monitoring &amp; Automated Logging</p>
+
+                <p class="project-narrative">
+                  A Linux automation project built using Bash to continuously inspect server health, calculate CPU and memory consumption, monitor disk partition thresholds, and write timestamped diagnostic logs.
                 </p>
-              </div>
-            </div>
 
-            <div class="contact-resume-card">
-              <div class="resume-info">
-                <div class="resume-icon" aria-hidden="true">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+                <!-- Technical Highlights List -->
+                <div class="project-highlights-box">
+                  <h4 class="highlights-heading">KEY HIGHLIGHTS:</h4>
+                  <ul class="highlights-list">
+                    <li><span class="h-bullet">&#9656;</span><strong>Bash script named <code>monitoring.sh</code></strong> engineered for unattended execution and robust error handling.</li>
+                    <li><span class="h-bullet">&#9656;</span><strong>Scheduled execution using cron</strong> configured to trigger midnight health snapshots automatically.</li>
+                    <li><span class="h-bullet">&#9656;</span><strong>System resource monitoring</strong> tracking memory buffers, root filesystem capacity, and CPU idle percentages into structured logs.</li>
+                    <li><span class="h-bullet">&#9656;</span><strong>Git version control</strong> maintaining clear branching and revision logs for all automation scripts.</li>
+                    <li><span class="h-bullet">&#9656;</span><strong>AWS EC2 environment</strong> deployment verifying cloud-hosted Linux instance operational telemetry.</li>
+                  </ul>
                 </div>
-                <div>
-                  <div class="resume-name">Curriculum Vitae / Resume</div>
-                  <div class="resume-note">PDF Format • Place file in assets/resume.pdf</div>
-                </div>
-              </div>
-              
-              <a href="assets/resume.pdf" class="contact-action-btn placeholder-link" data-info="Resume PDF file (assets/resume.pdf)" download>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
-                Download
-              </a>
-            </div>
-          </div>
 
-          <!-- Contact Right: Direct Channels (No Fake Forms) -->
-          <div class="contact-card">
-            <h3 class="contact-card-title">Direct Channels</h3>
-            <p class="contact-card-text">
-              Direct, transparent contact methods. Click to email or copy contact handles:
-            </p>
+                <!-- Technologies -->
+                <div class="project-tags-group" aria-label="Technologies Used">
+                  <span class="tech-tag">Linux</span>
+                  <span class="tech-tag">Bash</span>
+                  <span class="tech-tag">AWS EC2</span>
+                  <span class="tech-tag">Git</span>
+                  <span class="tech-tag">Cron</span>
+                </div>
 
-            <div class="contact-methods">
-              
-              <!-- Email -->
-              <div class="contact-method-item">
-                <div class="contact-method-icon" aria-hidden="true">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                </div>
-                <div class="contact-method-info">
-                  <div class="contact-method-label">Email Address</div>
-                  <div class="contact-method-value">your.email@example.com</div>
-                </div>
-                <div style="display: flex; gap: 0.4rem;">
-                  <button class="contact-action-btn" id="btn-copy-email" data-email="your.email@example.com" title="Copy email address" aria-label="Copy email address to clipboard">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
-                    Copy
-                  </button>
-                  <a href="mailto:your.email@example.com" class="contact-action-btn placeholder-link" data-info="Email address mailto link">
-                    Send
+                <!-- Action Buttons: Download Project & GitHub -->
+                <div class="project-actions-row">
+                  <a href="assets/downloads/monitoring.zip" download="monitoring.zip" class="btn btn-project-download" id="btn-download-monitoring" aria-label="Download Linux System Monitoring Project files as ZIP archive">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                      <polyline points="7 10 12 15 17 10"></polyline>
+                      <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    <span>Download Project (ZIP)</span>
+                  </a>
+                  <a href="https://github.com/Afnan3311" target="_blank" rel="noopener noreferrer" class="btn btn-project-gh" aria-label="View Linux Monitoring project on Afnan's GitHub profile">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                      <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                    </svg>
+                    <span>View on GitHub (Afnan3311)</span>
+                    <svg class="icon-ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
                   </a>
                 </div>
+
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: EyeQ — AI-Powered Eye Disease Detection Platform -->
+          <article class="project-card">
+            <div class="project-content-grid">
+              
+              <!-- Left Visual Side: Real Asset -->
+              <div class="project-media-side">
+                <div class="project-window-frame">
+                  <div class="window-topbar">
+                    <div class="window-dots">
+                      <span class="dot red"></span>
+                      <span class="dot yellow"></span>
+                      <span class="dot green"></span>
+                    </div>
+                    <span class="window-title">EyeQ AI Platform &bull; Mobile &amp; REST Backend</span>
+                    <span class="window-badge">FULL-STACK AI</span>
+                  </div>
+                  
+                  <div class="project-image-wrapper">
+                    <img 
+                      src="assets/images/eyeq-project.png" 
+                      alt="EyeQ AI-Powered Retinal Scan Analysis Platform Interface"
+                      class="project-preview-img"
+                      loading="lazy"
+                    >
+                    <div class="image-gradient-vignette" aria-hidden="true"></div>
+                  </div>
+                </div>
               </div>
 
-              <!-- GitHub -->
-              <div class="contact-method-item">
-                <div class="contact-method-icon" aria-hidden="true">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              <!-- Right Info Side -->
+              <div class="project-details-side">
+                <div class="project-badge-row">
+                  <span class="badge-tech-primary">AI &amp; Full-Stack Healthcare</span>
+                  <span class="badge-env">Django + Flutter</span>
                 </div>
-                <div class="contact-method-info">
-                  <div class="contact-method-label">GitHub Profile</div>
-                  <div class="contact-method-value">github.com/yourusername</div>
+
+                <h3 class="project-name">EyeQ: AI-Powered Eye Disease Detection System</h3>
+                <p class="project-headline-sub">Dual-Eye Retinal Image Analysis Platform</p>
+
+                <p class="project-narrative">
+                  A full-stack AI-powered eye disease detection platform featuring a Flutter mobile application and a Python Django backend for secure authentication, clinic appointment scheduling, automated diagnosis management, and medical record handling.
+                </p>
+
+                <!-- Technical Highlights List -->
+                <div class="project-highlights-box">
+                  <h4 class="highlights-heading">KEY HIGHLIGHTS:</h4>
+                  <ul class="highlights-list">
+                    <li><span class="h-bullet">&#9656;</span><strong>Customized EfficientNet-B3 model</strong> engineered for high-precision retinal pathology feature extraction.</li>
+                    <li><span class="h-bullet">&#9656;</span><strong>Dual-eye retinal image analysis</strong> simultaneously assessing left and right fundus photographic inputs.</li>
+                    <li><span class="h-bullet">&#9656;</span><strong>Multi-label disease detection</strong> classifying concurrent conditions including diabetic retinopathy and glaucoma.</li>
+                    <li><span class="h-bullet">&#9656;</span><strong>Image preprocessing &amp; feature fusion</strong> standardizing clinical scans with OpenCV before tensor ingestion.</li>
+                    <li><span class="h-bullet">&#9656;</span><strong>Affected-eye identification</strong> providing localized diagnostic telemetry for clinical assistance.</li>
+                  </ul>
                 </div>
-                <a href="https://github.com/yourusername" class="contact-action-btn placeholder-link" data-info="GitHub profile link" target="_blank" rel="noopener noreferrer">
-                  Visit
-                </a>
+
+                <!-- Technologies -->
+                <div class="project-tags-group" aria-label="Technologies Used">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Django</span>
+                  <span class="tech-tag">Flutter</span>
+                  <span class="tech-tag">Dart</span>
+                  <span class="tech-tag">PyTorch</span>
+                  <span class="tech-tag">EfficientNet-B3</span>
+                  <span class="tech-tag">OpenCV</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">REST API</span>
+                </div>
+
+                <!-- GitHub Action Button -->
+                <div class="project-actions-row">
+                  <a href="https://github.com/Afnan3311" target="_blank" rel="noopener noreferrer" class="btn btn-project-gh" aria-label="View EyeQ project on Afnan's GitHub profile">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                      <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                    </svg>
+                    <span>View on GitHub (Afnan3311)</span>
+                    <svg class="icon-ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: HeartPredict AI -->
+          <article class="project-card">
+            <div class="project-content-grid">
+              
+              <!-- Left Visual Side: ML Pipeline Diagram -->
+              <div class="project-media-side">
+                <div class="project-window-frame">
+                  <div class="window-topbar">
+                    <div class="window-dots">
+                      <span class="dot red"></span>
+                      <span class="dot yellow"></span>
+                      <span class="dot green"></span>
+                    </div>
+                    <span class="window-title">Flask Application &bull; ML Clinical Pipeline</span>
+                    <span class="window-badge">SCIKIT-LEARN</span>
+                  </div>
+                  
+                  <div class="ml-pipeline-display">
+                    <div class="pipeline-row">
+                      <div class="pipe-box"><span class="pipe-icon">&bull;</span> Clinical Parameters</div>
+                      <div class="pipe-connector">&rarr;</div>
+                      <div class="pipe-box"><span class="pipe-icon">&bull;</span> SMOTE &amp; Scaling</div>
+                    </div>
+                    <div class="pipeline-row">
+                      <div class="pipe-connector-vertical">&darr;</div>
+                    </div>
+                    <div class="pipeline-row">
+                      <div class="pipe-box pipe-highlight"><span class="pipe-icon">&#9733;</span> Random Forest + GridSearch</div>
+                      <div class="pipe-connector">&rarr;</div>
+                      <div class="pipe-box"><span class="pipe-icon">&bull;</span> Flask Web UI</div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              <!-- LinkedIn -->
-              <div class="contact-method-item">
-                <div class="contact-method-icon" aria-hidden="true">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              <!-- Right Info Side -->
+              <div class="project-details-side">
+                <div class="project-badge-row">
+                  <span class="badge-tech-primary">Machine Learning Web App</span>
+                  <span class="badge-env">Scikit-Learn + Flask</span>
                 </div>
-                <div class="contact-method-info">
-                  <div class="contact-method-label">LinkedIn Profile</div>
-                  <div class="contact-method-value">linkedin.com/in/yourusername</div>
+
+                <h3 class="project-name">HeartPredict AI</h3>
+                <p class="project-headline-sub">Clinical Parameter Disease Risk Classifier</p>
+
+                <p class="project-narrative">
+                  An AI-powered web application built with Python and Flask for heart disease prediction using patient clinical health parameters, focusing on data balancing, feature scaling, and transparent probabilistic scoring.
+                </p>
+
+                <!-- Technical Highlights List -->
+                <div class="project-highlights-box">
+                  <h4 class="highlights-heading">KEY HIGHLIGHTS:</h4>
+                  <ul class="highlights-list">
+                    <li><span class="h-bullet">&#9656;</span><strong>Random Forest classifier</strong> trained for stable ensemble predictive accuracy across diverse biometric markers.</li>
+                    <li><span class="h-bullet">&#9656;</span><strong>Data preprocessing &amp; feature scaling</strong> normalizing disparate continuous and categorical distributions.</li>
+                    <li><span class="h-bullet">&#9656;</span><strong>SMOTE-based class balancing</strong> preventing model bias across imbalanced disease diagnosis sample groups.</li>
+                    <li><span class="h-bullet">&#9656;</span><strong>Hyperparameter tuning with GridSearchCV</strong> systematically optimizing tree estimators and max depth.</li>
+                    <li><span class="h-bullet">&#9656;</span><strong>K-Fold cross-validation</strong> confirming test metrics avoid variance and overfitting.</li>
+                  </ul>
                 </div>
-                <a href="https://linkedin.com/in/yourusername" class="contact-action-btn placeholder-link" data-info="LinkedIn profile link" target="_blank" rel="noopener noreferrer">
-                  Connect
-                </a>
+
+                <!-- Technologies -->
+                <div class="project-tags-group" aria-label="Technologies Used">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Flask</span>
+                  <span class="tech-tag">Scikit-learn</span>
+                  <span class="tech-tag">Pandas</span>
+                  <span class="tech-tag">NumPy</span>
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">Bootstrap</span>
+                  <span class="tech-tag">JavaScript</span>
+                </div>
+
+                <!-- GitHub Action Button -->
+                <div class="project-actions-row">
+                  <a href="https://github.com/Afnan3311" target="_blank" rel="noopener noreferrer" class="btn btn-project-gh" aria-label="View HeartPredict AI on Afnan's GitHub profile">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                      <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                    </svg>
+                    <span>View on GitHub (Afnan3311)</span>
+                    <svg class="icon-ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: Practical Linux Administration Lab -->
+          <article class="project-card lab-project">
+            <div class="project-content-grid">
+              
+              <!-- Left Visual Side: Lab Commands Matrix -->
+              <div class="project-media-side">
+                <div class="project-window-frame">
+                  <div class="window-topbar">
+                    <div class="window-dots">
+                      <span class="dot red"></span>
+                      <span class="dot yellow"></span>
+                      <span class="dot green"></span>
+                    </div>
+                    <span class="window-title">rhel-lab &bull; Enterprise Admin Exercises</span>
+                    <span class="window-badge">RHCSA LABS</span>
+                  </div>
+                  
+                  <div class="lab-terminal-matrix">
+                    <div class="lab-matrix-header">VERIFIED EXERCISES // RHEL 9</div>
+                    <div class="matrix-grid">
+                      <div class="matrix-item"><span class="m-status">&#10003;</span> useradd / usermod / groupadd</div>
+                      <div class="matrix-item"><span class="m-status">&#10003;</span> chmod / chown / ACLs / umask</div>
+                      <div class="matrix-item"><span class="m-status">&#10003;</span> fdisk / gdisk / parted storage</div>
+                      <div class="matrix-item"><span class="m-status">&#10003;</span> pvcreate / vgextend / lvextend</div>
+                      <div class="matrix-item"><span class="m-status">&#10003;</span> mkfs.xfs / xfs_growfs / tune2fs</div>
+                      <div class="matrix-item"><span class="m-status">&#10003;</span> systemctl enable --now / daemon-reload</div>
+                      <div class="matrix-item"><span class="m-status">&#10003;</span> ssh-keygen / authorized_keys / sshd_config</div>
+                      <div class="matrix-item"><span class="m-status">&#10003;</span> nmcli con mod / /etc/resolv.conf</div>
+                      <div class="matrix-item"><span class="m-status">&#10003;</span> exports / nfs-server / /etc/auto.master</div>
+                    </div>
+                  </div>
+                </div>
               </div>
 
+              <!-- Right Info Side -->
+              <div class="project-details-side">
+                <div class="project-badge-row">
+                  <span class="badge-tech-primary">Hands-on Learning Lab</span>
+                  <span class="badge-env">RHEL 9 Administration</span>
+                </div>
+
+                <h3 class="project-name">Linux Administration Hands-On Lab</h3>
+                <p class="project-headline-sub">RHCSA Practical Systems Operations &amp; Troubleshooting</p>
+
+                <p class="project-narrative">
+                  A documented hands-on learning lab covering enterprise Red Hat Enterprise Linux operations, storage allocation, system recovery, user permission hardening, and service management.
+                </p>
+
+                <!-- Topics Covered -->
+                <div class="project-highlights-box">
+                  <h4 class="highlights-heading">PRACTICAL DOMAINS PRACTICED:</h4>
+                  <ul class="highlights-list">
+                    <li><span class="h-bullet">&#9656;</span><strong>Users &amp; groups:</strong> Non-login service users, secondary group assignments, aging policies.</li>
+                    <li><span class="h-bullet">&#9656;</span><strong>File permissions:</strong> Standard permissions, SUID/SGID bits, sticky bits, and sudoers privileges.</li>
+                    <li><span class="h-bullet">&#9656;</span><strong>LVM storage:</strong> Physical volumes, volume group aggregation, and live logical volume resizing.</li>
+                    <li><span class="h-bullet">&#9656;</span><strong>systemd services:</strong> Custom unit file generation, dependency sequencing, and journalctl analysis.</li>
+                    <li><span class="h-bullet">&#9656;</span><strong>NFS &amp; AutoFS:</strong> Network directory exports, firewall rules, and automated automounter configuration.</li>
+                  </ul>
+                </div>
+
+                <!-- Technologies -->
+                <div class="project-tags-group" aria-label="Technologies Used">
+                  <span class="tech-tag">RHEL</span>
+                  <span class="tech-tag">LVM</span>
+                  <span class="tech-tag">XFS</span>
+                  <span class="tech-tag">systemd</span>
+                  <span class="tech-tag">SSH</span>
+                  <span class="tech-tag">NFS</span>
+                  <span class="tech-tag">AutoFS</span>
+                  <span class="tech-tag">nmcli</span>
+                </div>
+
+                <!-- GitHub Action Button -->
+                <div class="project-actions-row">
+                  <a href="https://github.com/Afnan3311" target="_blank" rel="noopener noreferrer" class="btn btn-project-gh" aria-label="View Linux Administration work on Afnan's GitHub profile">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                      <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                    </svg>
+                    <span>View Profile on GitHub</span>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         SECTION 4: CERTIFICATIONS (RHCSA PRIMARY SHOWCASE)
+         ----------------------------------------------------------------------- -->
+    <section class="section cert-section" id="certifications" aria-labelledby="cert-heading">
+      <div class="container">
+        
+        <div class="section-badge-wrapper">
+          <span class="section-badge">
+            <span class="badge-dot"></span>
+            <span>04 // CREDENTIALS</span>
+          </span>
+        </div>
+
+        <div class="section-header-block">
+          <h2 class="section-title" id="cert-heading">
+            Technical Certifications.<br>
+            <span class="text-teal">Industry-Standard Validation.</span>
+          </h2>
+          <p class="section-description">
+            Feature-highlighting the Red Hat Certified System Administrator (RHCSA) credential alongside certified programming competencies.
+          </p>
+        </div>
+
+        <!-- RHCSA Primary Highlight Banner Card -->
+        <div class="rhcsa-banner-card">
+          <div class="rhcsa-badge-halo" aria-hidden="true"></div>
+          
+          <div class="rhcsa-card-inner">
+            <div class="rhcsa-left">
+              <div class="rhcsa-seal-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="rhcsa-seal-svg" aria-hidden="true">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                </svg>
+                <span class="seal-text">PRIMARY CREDENTIAL</span>
+              </div>
+
+              <div class="rhcsa-title-block">
+                <div class="cert-authority">RED HAT &bull; CERTIFICATION</div>
+                <h3 class="rhcsa-name">Red Hat Certified System Administrator (RHCSA)</h3>
+                <div class="rhcsa-meta">
+                  <span class="meta-tag">Issuing Body: <strong>Red Hat</strong></span>
+                  <span class="meta-sep">&bull;</span>
+                  <span class="meta-tag">Date: <strong>August 2026</strong></span>
+                  <span class="meta-sep">&bull;</span>
+                  <span class="meta-verified"><span class="check-icon">&#10003;</span> Verified Credential</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="rhcsa-right">
+              <p class="rhcsa-relevance">
+                <strong>Linux Administration Relevance:</strong> RHCSA validates the core system administration skills required in Red Hat Enterprise Linux environments, including user security, persistent storage (LVM), firewall rules, running services, and filesystem configuration.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Supporting Certifications Grid -->
+        <div class="supporting-certs-grid">
+          
+          <!-- Cert 2: Java -->
+          <div class="sub-cert-card">
+            <div class="sub-cert-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M8 21h8"></path>
+                <path d="M12 17v4"></path>
+              </svg>
+            </div>
+            <div class="sub-cert-info">
+              <div class="sub-cert-issuer">Infosys SpringBoard</div>
+              <h4 class="sub-cert-title">Programming using Java</h4>
+              <div class="sub-cert-date">February 2024</div>
+            </div>
+          </div>
+
+          <!-- Cert 3: Python -->
+          <div class="sub-cert-card">
+            <div class="sub-cert-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <div class="sub-cert-info">
+              <div class="sub-cert-issuer">Spoken Tutorial Project, IIT Bombay</div>
+              <h4 class="sub-cert-title">Python Training</h4>
+              <div class="sub-cert-date">April 2024</div>
+            </div>
+          </div>
+
+          <!-- Cert 4: SQL -->
+          <div class="sub-cert-card">
+            <div class="sub-cert-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+              </svg>
+            </div>
+            <div class="sub-cert-info">
+              <div class="sub-cert-issuer">Oracle Academy</div>
+              <h4 class="sub-cert-title">Database Programming with SQL</h4>
+              <div class="sub-cert-date">May 2024</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         SECTION 5: EDUCATION & INTERNSHIP
+         ----------------------------------------------------------------------- -->
+    <section class="section edu-section" id="education" aria-labelledby="edu-heading">
+      <div class="container">
+        
+        <div class="section-badge-wrapper">
+          <span class="section-badge">
+            <span class="badge-dot"></span>
+            <span>05 // ACADEMICS &amp; EXPERIENCE</span>
+          </span>
+        </div>
+
+        <div class="edu-grid-layout">
+          
+          <!-- Education Column -->
+          <div class="edu-col">
+            <h2 class="section-title" id="edu-heading">
+              Education.<br>
+              <span class="text-teal">Academic Foundation.</span>
+            </h2>
+
+            <div class="timeline-container">
+              
+              <!-- Degree -->
+              <div class="timeline-item current">
+                <div class="timeline-marker" aria-hidden="true"></div>
+                <div class="timeline-box">
+                  <div class="timeline-top">
+                    <span class="timeline-dates">2022 &ndash; 2026</span>
+                    <span class="timeline-pill">CGPA: 7.34</span>
+                  </div>
+                  <h3 class="timeline-degree">Bachelor of Technology in Computer Science and Engineering</h3>
+                  <div class="timeline-school">Vidya Academy of Science and Technology</div>
+                  <p class="timeline-notes">Core studies: Operating Systems, Computer Networks, Database Management Systems, Data Structures &amp; Algorithms.</p>
+                </div>
+              </div>
+
+              <!-- Class XII -->
+              <div class="timeline-item">
+                <div class="timeline-marker" aria-hidden="true"></div>
+                <div class="timeline-box">
+                  <div class="timeline-top">
+                    <span class="timeline-dates">2020 &ndash; 2022</span>
+                    <span class="timeline-pill">91.2%</span>
+                  </div>
+                  <h3 class="timeline-degree">Class XII &bull; Higher Secondary Education</h3>
+                  <div class="timeline-school">St Joseph HSS Mathilakam &bull; Kerala HSE Board</div>
+                </div>
+              </div>
+
+              <!-- Class X -->
+              <div class="timeline-item">
+                <div class="timeline-marker" aria-hidden="true"></div>
+                <div class="timeline-box">
+                  <div class="timeline-top">
+                    <span class="timeline-dates">2020</span>
+                    <span class="timeline-pill">68.7%</span>
+                  </div>
+                  <h3 class="timeline-degree">Class X &bull; Secondary School Examination</h3>
+                  <div class="timeline-school">Albab Central School &bull; CBSE Board</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Internship & Learning Journey Column -->
+          <div class="experience-col">
+            
+            <!-- Internship Card -->
+            <div class="internship-showcase">
+              <div class="internship-header">
+                <span class="exp-badge">INTERNSHIP EXPERIENCE</span>
+                <h3 class="exp-org">ICT Academy of Kerala</h3>
+                <div class="exp-field">Area: Artificial Intelligence &amp; Machine Learning</div>
+              </div>
+              <ul class="exp-bullets-list">
+                <li><span class="bullet-teal">&#9656;</span> Gained hands-on experience in Python programming and numerical analysis.</li>
+                <li><span class="bullet-teal">&#9656;</span> Practiced end-to-end data preprocessing, missing-value imputation, and feature engineering.</li>
+                <li><span class="bullet-teal">&#9656;</span> Worked with supervised and unsupervised machine learning algorithms.</li>
+                <li><span class="bullet-teal">&#9656;</span> Participated in project work involving predictive modelling and multi-class classification.</li>
+              </ul>
+            </div>
+
+            <!-- Learning Journey Progression Timeline -->
+            <div class="journey-card">
+              <h3 class="journey-heading">Professional Journey &amp; Direction</h3>
+              <p class="journey-copy">Focused trajectory connecting computer science fundamentals, enterprise system administration, and modern cloud infrastructure.</p>
+              
+              <div class="journey-steps">
+                <div class="journey-step">
+                  <div class="step-num">01</div>
+                  <div class="step-body">
+                    <div class="step-title">Computer Science Graduate</div>
+                    <div class="step-desc">Strong fundamentals in operating systems, algorithms, networking protocols, and systems architecture.</div>
+                  </div>
+                </div>
+
+                <div class="journey-arrow">&darr;</div>
+
+                <div class="journey-step step-highlight">
+                  <div class="step-num">02</div>
+                  <div class="step-body">
+                    <div class="step-title">RHCSA-Certified Linux Administrator</div>
+                    <div class="step-desc">Hands-on enterprise mastery in RHEL, LVM storage, user permissions, networking, and systemd service management.</div>
+                  </div>
+                </div>
+
+                <div class="journey-arrow">&darr;</div>
+
+                <div class="journey-step">
+                  <div class="step-num">03</div>
+                  <div class="step-body">
+                    <div class="step-title">DevOps &amp; Cloud Infrastructure Learning</div>
+                    <div class="step-desc">Advancing into automated Bash scripting, Git workflows, AWS EC2 fundamentals, and CI/CD pipelines.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- -----------------------------------------------------------------------
+         SECTION 6: CONTACT SECTION
+         ----------------------------------------------------------------------- -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        
+        <div class="section-badge-wrapper">
+          <span class="section-badge">
+            <span class="badge-dot"></span>
+            <span>06 // CONNECT</span>
+          </span>
+        </div>
+
+        <div class="contact-header-block">
+          <h2 class="contact-headline" id="contact-heading">
+            LET'S BUILD SOMETHING RELIABLE.
+          </h2>
+          <p class="contact-subheadline">
+            I'm interested in opportunities involving Linux administration, DevOps, cloud infrastructure, and technical support. Let's connect.
+          </p>
+        </div>
+
+        <div class="contact-layout-grid">
+          
+          <!-- Left Column: Direct Communication Cards -->
+          <div class="contact-cards-col">
+            
+            <!-- Email Action Card with Instant Copy -->
+            <div class="contact-channel-card">
+              <div class="channel-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+              </div>
+              <div class="channel-details">
+                <span class="channel-label">Direct Email</span>
+                <span class="channel-val" id="email-address-text">mohdafnan9617@gmail.com</span>
+              </div>
+              <div class="channel-actions">
+                <a href="mailto:mohdafnan9617@gmail.com" class="btn btn-sm btn-teal" aria-label="Open email client">Send Email</a>
+                <button class="btn btn-sm btn-ghost" id="btn-copy-email" aria-label="Copy email address to clipboard">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="copy-svg" aria-hidden="true">
+                    <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                    <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                  </svg>
+                  <span class="copy-label">Copy</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- LinkedIn Card -->
+            <a href="https://www.linkedin.com/in/mohammed-afnan04/" target="_blank" rel="noopener noreferrer" class="contact-channel-card channel-link" aria-label="Open LinkedIn profile in new tab">
+              <div class="channel-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </div>
+              <div class="channel-details">
+                <span class="channel-label">LinkedIn Profile</span>
+                <span class="channel-val">linkedin.com/in/mohammed-afnan04</span>
+              </div>
+              <div class="channel-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </div>
+            </a>
+
+            <!-- GitHub Card -->
+            <a href="https://github.com/Afnan3311" target="_blank" rel="noopener noreferrer" class="contact-channel-card channel-link" aria-label="Open GitHub profile in new tab">
+              <div class="channel-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
+                  <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                </svg>
+              </div>
+              <div class="channel-details">
+                <span class="channel-label">GitHub Repositories</span>
+                <span class="channel-val">github.com/Afnan3311</span>
+              </div>
+              <div class="channel-arrow">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </div>
+            </a>
+
+            <!-- Location Card -->
+            <div class="contact-channel-card">
+              <div class="channel-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="channel-details">
+                <span class="channel-label">Geographic Location</span>
+                <span class="channel-val">Thrissur, Kerala, India</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Validated Message Form -->
+          <div class="contact-form-col">
+            <div class="form-wrapper-box">
+              <div class="form-header">
+                <h3 class="form-title">Send a Direct Message</h3>
+                <p class="form-sub">Submitting launches a formatted message in your email client addressed directly to Afnan.</p>
+              </div>
+
+              <form id="contact-form" class="direct-contact-form" novalidate>
+                <div class="form-group">
+                  <label for="form-name" class="form-label">Your Name <span class="req">*</span></label>
+                  <input type="text" id="form-name" name="name" class="form-input" placeholder="e.g. Alex Morgan" required>
+                  <div class="field-error" id="name-error">Please enter your name.</div>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-email" class="form-label">Your Email <span class="req">*</span></label>
+                  <input type="email" id="form-email" name="email" class="form-input" placeholder="e.g. alex@company.com" required>
+                  <div class="field-error" id="email-error">Please provide a valid email address.</div>
+                </div>
+
+                <div class="form-group">
+                  <label for="form-subject" class="form-label">Subject / Role Opportunity</label>
+                  <input type="text" id="form-subject" name="subject" class="form-input" placeholder="e.g. Junior DevOps Engineer Opening / Discussion">
+                </div>
+
+                <div class="form-group">
+                  <label for="form-message" class="form-label">Message <span class="req">*</span></label>
+                  <textarea id="form-message" name="message" class="form-textarea" rows="4" placeholder="Hi Afnan, we're looking for an RHCSA-certified engineer for..." required></textarea>
+                  <div class="field-error" id="message-error">Please enter your message.</div>
+                </div>
+
+                <!-- Static Host Notice -->
+                <div class="form-info-note">
+                  <span class="note-icon">&#9432;</span>
+                  <span><strong>Notice:</strong> This is a client-side static site without an active backend. Submitting opens your email client prepared with your message, or you can email directly at <a href="mailto:mohdafnan9617@gmail.com" class="link-teal">mohdafnan9617@gmail.com</a>.</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-submit-form" id="btn-submit">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon" aria-hidden="true">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                  <span>Transmit Message</span>
+                </button>
+
+                <div class="form-status" id="form-status" role="alert" aria-live="polite"></div>
+              </form>
             </div>
           </div>
 
@@ -757,49 +1439,89 @@
        FOOTER
        ========================================================================= -->
   <footer class="site-footer">
-    <div class="container">
+    <div class="container footer-content">
       
-      <div class="footer-top">
-        <div class="footer-brand">
-          <div class="footer-author">Mohammed Afnan K.A.</div>
-          <div class="footer-tagline">Automating workflows. Building reliable systems. Learning continuously.</div>
-        </div>
-
-        <div class="footer-social-links">
-          <a href="https://github.com/yourusername" class="social-icon-btn placeholder-link" data-info="GitHub profile" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
-          </a>
-          <a href="https://linkedin.com/in/yourusername" class="social-icon-btn placeholder-link" data-info="LinkedIn profile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-          </a>
-        </div>
+      <div class="footer-left">
+        <div class="footer-title">Mohammed Afnan K A</div>
+        <div class="footer-subtitle">RHCSA Certified | Aspiring DevOps Engineer</div>
+        <div class="footer-tech-stack">Built with Semantic HTML5 &bull; Vanilla Modern CSS &bull; 60fps Native Scroll Engine</div>
       </div>
 
-      <div class="footer-bottom">
-        <p class="footer-credit">
-          Designed and built by Mohammed Afnan K.A.
-        </p>
-        <p class="footer-copyright">
-          &copy; <span id="current-year">2026</span> All rights reserved.
-        </p>
+      <div class="footer-center">
+        <a href="#hero-track" class="back-to-top-btn" aria-label="Return to top of page">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+          <span>Back to Top</span>
+        </a>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-links">
+          <a href="https://github.com/Afnan3311" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <span class="footer-sep">&bull;</span>
+          <a href="https://www.linkedin.com/in/mohammed-afnan04/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <span class="footer-sep">&bull;</span>
+          <a href="assets/Afnan_System_Engineer.pdf" download="Afnan_System_Engineer.pdf">Resume</a>
+        </div>
+        <div class="footer-copy">
+          &copy; <span id="current-year">2026</span> Mohammed Afnan K A. All rights reserved.
+        </div>
       </div>
 
     </div>
   </footer>
 
   <!-- =========================================================================
-       UTILITY COMPONENTS: SCROLL TO TOP & TOAST NOTIFICATION
+       INTERACTIVE DEVOPS TERMINAL DRAWER (DELIGHT FEATURE FOR RECRUITERS)
        ========================================================================= -->
-  <button class="scroll-top-btn" id="scroll-top-btn" aria-label="Scroll to top of page">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
-  </button>
+  <div class="terminal-drawer-overlay" id="terminal-overlay" aria-hidden="true">
+    <div class="terminal-drawer" id="terminal-drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+      
+      <div class="drawer-header">
+        <div class="drawer-header-left">
+          <div class="window-dots">
+            <span class="dot red" id="term-close-dot" title="Close Terminal"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="drawer-title" id="drawer-title">rhel-afnan &mdash; Interactive DevOps Shell v2.4 (x86_64)</span>
+        </div>
+        <div class="drawer-header-right">
+          <span class="kbd-hint">Press <strong>ESC</strong> or <strong>`</strong> to close</span>
+          <button class="drawer-close-btn" id="btn-close-terminal" aria-label="Close terminal dialog">&times;</button>
+        </div>
+      </div>
 
-  <div class="toast-notice" id="toast-notice" role="status" aria-live="polite">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
-    <span class="toast-text">Notice message</span>
+      <div class="drawer-body" id="terminal-body">
+        <div class="term-welcome">
+          <pre class="term-banner">
+   _____  ______ _   _          _   _ 
+  / ____||  ____| \ | |   /\   | \ | |
+ | |     | |__  |  \| |  /  \  |  \| |
+ | |     |  __| | . ` | / /\ \ | . ` |
+ | |____ | |    | |\  |/ ____ \| |\  |
+  \_____||_|    |_| \_/_/    \_\_| \_|
+  RHCSA Certified &bull; Aspiring DevOps Engineer
+          </pre>
+          <p class="term-hint-line">Type <span class="cmd-highlight">help</span> to view commands, or try <span class="cmd-highlight">projects</span>, <span class="cmd-highlight">download monitoring</span>, <span class="cmd-highlight">download resume</span>.</p>
+        </div>
+
+        <div id="term-history"></div>
+
+        <div class="term-input-line">
+          <span class="term-ps1"><span class="ps1-user">afnan</span>@<span class="ps1-host">devops-node</span>:<span class="ps1-path">~</span>$</span>
+          <input type="text" id="term-input" class="term-cmd-input" autocomplete="off" spellcheck="false" autofocus>
+        </div>
+      </div>
+
+    </div>
   </div>
 
-  <!-- Vanilla JavaScript -->
-  <script src="js/script.js"></script>
+  <!-- Notification Toast Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
 </body>
 </html>

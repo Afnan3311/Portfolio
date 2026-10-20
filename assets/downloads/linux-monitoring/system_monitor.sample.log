@@ -1,0 +1,11 @@
+[2026-10-20 00:00:01 UTC] [INFO] Created log directory: /var/log/system_monitor
+[2026-10-20 00:00:01 UTC] [METADATA] EC2 Instance: i-08f3a9e2d14b9c510 (t3.micro) in us-east-1a
+[2026-10-20 00:00:02 UTC] [INFO] CPU Usage: 4.2%, Load: 0.12, 0.08, 0.05
+[2026-10-20 00:00:02 UTC] [INFO] Memory Utilization: 38% (372M/968M)
+[2026-10-20 00:00:02 UTC] [INFO] Root filesystem usage: 24%
+[2026-10-20 00:00:02 UTC] [SERVICE] ssh is ACTIVE
+[2026-10-20 00:00:02 UTC] [SERVICE] cron is ACTIVE
+[2026-10-20 00:00:02 UTC] [SERVICE] systemd-journald is ACTIVE
+[2026-10-20 00:00:02 UTC] [SERVICE] systemd-resolved is ACTIVE
+[2026-10-20 00:00:02 UTC] [CRON] Automated midnight execution finished.
+[2026-10-20 00:00:02 UTC] [INFO] System monitoring audit completed successfully.

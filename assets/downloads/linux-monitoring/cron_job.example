@@ -1,0 +1,36 @@
+# ==============================================================================
+# Sample Cron Schedule & Logrotate Configuration
+# Project: Linux System Monitoring & Automation (Mohammed Afnan K A)
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. CRONTAB ENTRY (Edit with: crontab -e)
+# ------------------------------------------------------------------------------
+# Field description:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12)
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7)
+# *  *  *  *  * user-name command to be executed
+
+# Run system monitoring every day at midnight (00:00)
+0 0 * * * /usr/local/bin/monitoring.sh --cron >> /var/log/system_monitor/cron_execution.log 2>&1
+
+# Optional: Run quick sanity check every 6 hours
+# 0 */6 * * * /usr/local/bin/monitoring.sh --cron
+
+# ------------------------------------------------------------------------------
+# 2. LOGROTATE CONFIGURATION (/etc/logrotate.d/system_monitor)
+# ------------------------------------------------------------------------------
+# Keep 14 days of logs, compress old logs, and avoid filling root filesystem
+#
+# /var/log/system_monitor/*.log {
+#     daily
+#     missingok
+#     rotate 14
+#     compress
+#     delaycompress
+#     notifempty
+#     create 0640 root adm
+# }
